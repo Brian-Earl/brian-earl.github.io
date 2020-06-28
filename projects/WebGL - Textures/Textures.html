@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<script id="vshader" type="x-shader/x-vertex">
+
+    attribute vec4 vPosition;
+    attribute vec4 vColor;
+    attribute vec4 vNormal;
+    attribute vec2 vTexCoord;
+
+    uniform mat4 projMatrix;
+    uniform vec4 ambientProduct, diffuseProduct, specularProduct;
+    uniform vec4 lightPosition;
+    uniform mat4 viewMatrix;
+    uniform mat4 modelMatrix;
+    uniform float vPointSize;
+    uniform float isTextured;
+    uniform float isReflect;
+    uniform float isRefract;
+    uniform float isShadow;
+    
+    varying vec4 fColor;
+    varying vec2 fTexCoord;
+    varying vec3 R;
+    varying float isTex;
+    varying float isMap;
+    varying vec3 refrect;
+    varying float shadow;
+
+    uniform float shininess;
+    uniform float spotlightSize;
+    
+
+    void main() {
+        vec3 pos = (modelMatrix * vPosition).xyz;
+        vec3 L = normalize(lightPosition.xyz - pos);
+
+        vec3 N = normalize(modelMatrix * vNormal).xyz;
+
+        vec3 V = normalize(-pos);
+        R = (2.0 * dot(L, N) * N) - L;
+
+        if(isRefract > .5 && isReflect > .5)
+            refrect = reflect(pos, N) * refract(pos, N, .95);
+        else if(isRefract > .5)
+            refrect = refract(pos, N, .95);
+        else if(isReflect > .5)
+            refrect = reflect(pos, N);
+
+        vec4 ambient = ambientProduct;
+        vec4 specular = vec4(vColor.r *.2, vColor.g *.2, vColor.b *.2, .6);
+        vec4 diffuse = vec4(vColor.r *.2, vColor.g *.2, vColor.b *.2, .6);
+        
+        if(dot(L, -normalize(vec3(-1, -1, -10))) > spotlightSize){
+            diffuse = diffuseProduct * dot(L, N) + vColor;
+            specular = specularProduct * pow(max(dot(V, R), 0.0), shininess);
+        }
+
+        fColor = diffuse + specular + ambient;
+        fColor.a = 1.0;
+
+        if(isShadow > .5)
+            fColor = vec4(0.0, 0.0, 0.0, 1.0);
+
+        fTexCoord = vTexCoord;
+        gl_Position = projMatrix * viewMatrix * modelMatrix * vPosition;
+        gl_PointSize = vPointSize;
+        isTex = isTextured;
+        isMap = isReflect + isRefract;
+        shadow = isShadow;
+    }
+</script>
+
+<script id="fshader" type="x-shader/x-fragment">
+
+precision mediump float;
+
+varying vec4 fColor;
+varying vec2 fTexCoord;
+varying float isTex;
+varying vec3 refrect;
+varying float isMap;
+varying float shadow;
+
+uniform sampler2D texture;
+uniform samplerCube textureMap;
+
+void main()
+{
+    if(isTex < .5)
+        if(isMap > .5 && shadow < .5){
+            vec4 texColor = textureCube(textureMap, refrect);
+            gl_FragColor = fColor * texColor;
+        }
+        else
+            gl_FragColor = fColor;
+    else
+        gl_FragColor = texture2D(texture, fTexCoord);
+}
+</script>
+
+<script type="text/javascript" src="lib/webgl-utils.js"></script>
+<script type="text/javascript" src="lib/initShaders.js"></script>
+<script type="text/javascript" src="lib/MV.js"></script>
+<script type="text/javascript" src="Textures.js"></script>
+
+<script>
+    //Events that take place when keys are pressed
+    window.onkeydown = function(event) {
+        let key = event.key.toUpperCase();
+        //Calls speficic methods depending on which key is pressed
+        switch(key){
+            case 'A':
+                toggleShadow()
+                break;
+            case 'B':
+                toggleTexure()
+                break;
+            case 'C':
+                toggleReflect()
+                break;
+            case 'D':
+                toggleRefract()
+                break;
+        }
+    }
+</script>
+
+
+<body onload="main()">
+    <center> <canvas id="webgl" width="800" height="600" style="border: 1px solid black;">
+        Please use a browser that supports the "canvas" tag.
+    </canvas></center>
+    <center><p>
+        Controls:
+        <br>
+        A - Toggle Shadows
+        <br>
+        B - Toggle Textures
+        <br>
+        C - Toggle Reflections
+        <br>
+        D - Toggle Refraction
+    </p></center>
+<img id = "texImage" src = "SA2011_black.gif" hidden></img>
+</body>
+</html>

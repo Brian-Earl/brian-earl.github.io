@@ -1,0 +1,111 @@
+<meta charset="utf-8"/>
+<html>
+    <body onload="main()">
+        <center> <canvas id="webgl" width="800" height="600" style="border: 1px solid black;">
+            Please use a browser that supports the "canvas" tag.
+        </canvas></center>
+        <center><p>
+            Controls (Case Sensitive):
+            <br>
+            m - Toggle Gourand Shading
+            <br>
+            M/n - Toggle Flat Shading
+            <br>
+            p - Decrease Spotlight Size
+            <br>
+            P/i - Increase Spotlight Size 
+        </p></center>
+    </body>
+
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+    </style>
+
+    <script id="vshader" type="x-shader/x-vertex">
+
+        attribute vec4 vPosition;
+        attribute vec4 vColor;
+        attribute vec4 vNormal;
+        uniform mat4 projMatrix;
+        uniform vec4 ambientProduct, diffuseProduct, specularProduct;
+        uniform vec4 lightPosition;
+        uniform mat4 viewMatrix;
+        uniform mat4 modelMatrix;
+        uniform float vPointSize;
+        varying vec4 fColor;
+        uniform float shininess;
+        uniform float spotlightSize;
+
+        void main() {
+            vec3 pos = (modelMatrix * vPosition).xyz;
+            vec3 L = normalize(lightPosition.xyz - pos);
+
+            vec3 N = normalize(modelMatrix * vNormal).xyz;
+
+
+            vec3 V = normalize(-pos);
+            vec3 R = (2.0 * dot(L, N) * N) - L;
+
+            vec4 ambient = ambientProduct;
+            vec4 specular = vec4(vColor.r *.2, vColor.g *.2, vColor.b *.2, .6);
+            vec4 diffuse = vec4(vColor.r *.2, vColor.g *.2, vColor.b *.2, .6);
+            
+            if(dot(L, -normalize(vec3(-1, -1, -10))) > spotlightSize){
+                diffuse = diffuseProduct * dot(L, N) + vColor;
+                specular = specularProduct * pow(max(dot(V, R), 0.0), shininess);
+            }
+
+            fColor = diffuse + specular + ambient;
+            fColor.a = 1.0;
+
+            gl_Position = projMatrix * viewMatrix * modelMatrix * vPosition;
+            gl_PointSize = vPointSize;
+
+          }
+    </script>
+        
+        <script id="fshader" type="x-shader/x-fragment">
+        precision mediump float;
+        varying vec4 fColor;
+        void main() 
+        {
+            gl_FragColor = fColor;
+        }
+    </script>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/initShaders.js"></script>
+    <script src="lib/MV.js"></script>
+    <script src="Spotlight.js"></script>
+    <script>
+        //Events that take place when keys are pressed
+        window.onkeydown = function(event) {
+            let key = event.key
+            //Calls speficic methods depending on which key is pressed
+            switch(key){
+                case 'm':
+                    gourandRender();
+                    break;
+                case 'M':
+                    flatRender();
+                    break
+                case 'n':
+                    flatRender();
+                    break;
+                default:
+                    break;
+                case 'p':
+                    alterSpotlight(-.05)
+                    break;
+                case 'P':
+                    alterSpotlight(.05)
+                    break;
+                case 'i':
+                    alterSpotlight(.05)
+                    break;
+            }
+        }
+    </script>
+
+</html>
