@@ -1,0 +1,28 @@
+{
+    "cards": [
+        {
+            "title": "Flashguard",
+            "description": "Project created for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video watched by the user, scanning for content that may cause seizures for people with epilepsy. If any are detected, the video will immediatly pause and a pop-up warning will display.",
+            "tags": [
+                {
+                    "title": "Python",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "Hackathon",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "72 Hours",
+                    "color": "is-warning"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/brycecorbitt/FlashGuard"
+                }
+            ]
+        }
+    ]
+}
