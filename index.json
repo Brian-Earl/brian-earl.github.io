@@ -131,7 +131,7 @@
         },
         {
             "title": "Experimental Cinema",
-            "description": "A WIP project made with a group of other students for my school's MQP requirement. This project is an interactive film where the user can interact using the gyroscope features of their mobile device. Through their interactions, users can alter the course of the story and get new information of the environment. Currently, an alpha build of the projects is available though it is only available for Android devices.",
+            "description": "This project is an interactive film made I created alongside a group of other students for my school's MQP program. Intended to be viewed on a mobile device, while watching, the viewer is able to interact with the film using the device's gyroscope features. Through their interactions, users can alter the course of the story and get new information of the environment. This project was made as a proof of concept for a whole new form of cinema, adapting the art form to fit modern technology.",
             "image": "./images/Experimental Cinema.png",
             "tags": [
                 {
