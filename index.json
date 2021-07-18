@@ -2,7 +2,8 @@
     "cards": [
         {
             "title": "Flashguard",
-            "description": "Project created for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video watched by the user, scanning for content that may cause seizures for people with epilepsy. If any are detected, the video will immediatly pause and a pop-up warning will display.",
+            "description": "Project created for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video watched by the user, scanning for content that may cause seizures for people with epilepsy. If any are detected, the video will immediately pause and a pop-up warning will display.",
+            "image": "https://camo.githubusercontent.com/856f81322728b1b675475dfbb49d58972e80897d/68747470733a2f2f692e696d6775722e636f6d2f394872526d6a472e706e67",
             "tags": [
                 {
                     "title": "Python",
@@ -21,6 +22,135 @@
                 {
                     "title": "Github",
                     "link": "https://github.com/brycecorbitt/FlashGuard"
+                }
+            ]
+        },
+        {
+            "title": "Dragonfly Game Engine",
+            "description": "Recreation of the Dragonfly Game Engine developed in C++ using SFML. The engine was developed over the course of several weeks as a class project. <br><br> A game using the engine was also created alongside a partner as a final test for the engine. The source code of which is also included within the repository.",
+            "image": "https://dragonfly.wpi.edu/dragonfly.gif",
+            "tags": [
+                {
+                    "title": "C++",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "SFML",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "Class Project",
+                    "color": "is-warning"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/Brian-Earl/Ireiterum"
+                }
+            ]
+        },
+        {
+            "title": "Rogue-Snake",
+            "description": "Rogue Snake is a game made with Unity that builds off of the classic game of Snake. The game features the classic gameplay of Snake, however, the play field has been greatly expanded into several rooms across a randomly generated dungeon.",
+            "image": "./images/Rogue Snake.PNG",
+            "tags": [
+                {
+                    "title": "C#",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "Unity",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "PROCJAM 2019",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "Class Project",
+                    "color": "is-warning"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/kreiselman/Rogue-Snake"
+                },
+                {
+                    "title": "Itch.io",
+                    "link": "https://kreiselman.itch.io/rogue-snake"
+                }
+            ]
+        },
+        {
+            "title": "WebGL Demos",
+            "description": "Collection of project written in JavaScript using WebGL. <br><br> The first demo contains a spinning mobile with each shape and layer rotating and spinning independently from one another. A spotlight shine on the mobile that the user can freely control the size of. Additionally, the user can toggle between multiple different lighting methods for the mobile. <br><br> The second demo features the same mobile as the first demo. However, in this demo, the model spins inside of a textured room which the mobile can shine shadows onto. Additionally, the user can also enable reflection and refraction effects for the model.",
+            "image": "./images/WebGl.PNG",
+            "tags": [
+                {
+                    "title": "JavaScript",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "WebGL",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "Class Project",
+                    "color": "is-warning"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Demo 1",
+                    "link": "https://bearl.dev/projects/WebGLSpotlight/Spotlight.html"
+                },
+                {
+                    "title": "Demo 2",
+                    "link": "https://bearl.dev/projects/WebGLTextures/Textures.html"
+                }
+            ]
+        },
+        {
+            "title": "Beckenham Place Park (III)",
+            "description": "As part of my school's IQP (Interactive Qualifying Project) program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. They originally wanted us to study and research how people used and thought of the park. However, due to COVID-19, we instead created tools to be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline that is used to perform visual observations throughout the park. The information gathered would then sync with a Google Sheet which we create macros for that would generate various statistics that are useful for the Lewisham Council.",
+            "image": "./images/IQP.png",
+            "tags": [
+                {
+                    "title": "School Project",
+                    "color": "is-warning"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Project Page",
+                    "link": "https://wp.wpi.edu/london/projects/2020-projects-spring/lewisham/"
+                }
+            ]
+        },
+        {
+            "title": "Experimental Cinema",
+            "description": "A WIP project made with a group of other students for my school's MQP requirement. This project is an interactive film where the user can interact using the gyroscope features of their mobile device. Through their interactions, users can alter the course of the story and get new information of the environment. Currently, an alpha build of the projects is available though it is only available for Android devices.",
+            "image": "./images/IQP.png",
+            "tags": [
+                {
+                    "title": "Unreal Engine ",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "School Project",
+                    "color": "is-warning"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Download Link",
+                    "link": "https://drive.google.com/drive/folders/1581ML0GAgSVbSmi18E2RYxTli7LFeohH?usp=sharing"
+                },
+                {
+                    "title": "Footage",
+                    "link": "https://youtu.be/6t5GyRfhGMg"
                 }
             ]
         }
