@@ -1,9 +1,3 @@
-//327 lines of HTML into
-//  > 90 lines of HTML
-//  > 80 lines of js
-//  > 158 lines of JSON
-//  > 328 lines total (ARE YOU KIDDING ME!! ONE LINE MORE!!)
-
 const body = document.getElementById("cardBody");
 
 $.getJSON('https://raw.githubusercontent.com/Brian-Earl/brian-earl.github.io/master/index.json', function (data) {
@@ -66,8 +60,9 @@ function createCard(cardData) {
     });
 
     cardDescription = document.createElement('div')
-    cardDescription.className = "content"
+    cardDescription.className = "content truncate"
     cardDescription.innerHTML = cardData.description
+    //truncate(cardDescription, 200, '...')
     cardContent.appendChild(cardDescription)
 
     buttonOutter = document.createElement('div')
@@ -84,4 +79,29 @@ function createCard(cardData) {
         button.style = "margin-right:10px;"
         buttonLink.appendChild(button)
     });
+}
+
+var truncate = function (elem, limit, after) {
+    if (elem.innerHTML.length > limit) {
+        //(content.count('<br>')
+        var content = elem.innerHTML
+        content = elem.innerHTML.slice(0, limit)
+        console.log(content)
+        // if ((content.count('<br><br>')) > 0) {
+        //     content = content.slice(0, length - (content.count('<br><br>') * 50))
+        // }
+        content = reverse(content)
+        content = content.slice(content.indexOf(' ') + 1, content.length)
+        content = reverse(content)
+        content += after
+        elem.innerHTML = content
+    }
+};
+
+function reverse(s) {
+    return s.split("").reverse().join("");
+}
+
+String.prototype.count = function (s1) {
+    return (this.length - this.replace(new RegExp(s1, "g"), '').length) / s1.length;
 }
