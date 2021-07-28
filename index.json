@@ -2,7 +2,7 @@
     "cards": [
         {
             "title": "Flashguard",
-            "description": "Project created for the HACKWPI 2019 hackathon. </p><p> Launching an instance of Chrome, the program monitors any YouTube video watched by the user, scanning for content that may cause seizures for people with epilepsy. If any are detected, the video will immediately pause and a pop-up warning will display.",
+            "description": "Project created for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video watched by the user, scanning for content that may cause seizures for people with epilepsy. If any are detected, the video will immediately pause and a pop-up warning will display.",
             "image": "https://camo.githubusercontent.com/856f81322728b1b675475dfbb49d58972e80897d/68747470733a2f2f692e696d6775722e636f6d2f394872526d6a472e706e67",
             "tags": [
                 {
@@ -27,7 +27,7 @@
         },
         {
             "title": "Dragonfly Game Engine",
-            "description": "Recreation of the Dragonfly Game Engine developed in C++ using SFML. The engine was developed over the course of several weeks as a class project. </p><p> A game using the engine was also created alongside a partner as a final test for the engine. The source code of which is also included within the repository.",
+            "description": "Recreation of the Dragonfly Game Engine developed in C++ using SFML. The engine was developed over the course of several weeks as a class project. <br><br> A game using the engine was also created alongside a partner as a final test for the engine. The source code of which is also included within the repository.",
             "image": "https://dragonfly.wpi.edu/dragonfly.gif",
             "tags": [
                 {
@@ -85,7 +85,7 @@
         },
         {
             "title": "WebGL Demos",
-            "description": "Collection of project written in JavaScript using WebGL. </p><p> The first demo contains a spinning mobile with each shape and layer rotating and spinning independently from one another. A spotlight shine on the mobile that the user can freely control the size of. Additionally, the user can toggle between multiple different lighting methods for the mobile. </p><p> The second demo features the same mobile as the first demo. However, in this demo, the model spins inside of a textured room which the mobile can shine shadows onto. Additionally, the user can also enable reflection and refraction effects for the model.",
+            "description": "Collection of project written in JavaScript using WebGL. <br><br> The first demo contains a spinning mobile with each shape and layer rotating and spinning independently from one another. A spotlight shine on the mobile that the user can freely control the size of. Additionally, the user can toggle between multiple different lighting methods for the mobile. <br><br> The second demo features the same mobile as the first demo. However, in this demo, the model spins inside of a textured room which the mobile can shine shadows onto. Additionally, the user can also enable reflection and refraction effects for the model.",
             "image": "./images/WebGl.PNG",
             "tags": [
                 {
@@ -114,7 +114,7 @@
         },
         {
             "title": "Beckenham Place Park (III)",
-            "description": "As part of my school's IQP (Interactive Qualifying Project) program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. They originally wanted us to study and research how people used and thought of the park. However, due to COVID-19, we instead created tools to be used by future teams to accomplish our original objectives. </p><p> The tools we created consists of a web tool that would function offline that is used to perform visual observations throughout the park. The information gathered would then sync with a Google Sheet which we create macros for that would generate various statistics that are useful for the Lewisham Council.",
+            "description": "As part of my school's IQP (Interactive Qualifying Project) program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. They originally wanted us to study and research how people used and thought of the park. However, due to COVID-19, we instead created tools to be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline that is used to perform visual observations throughout the park. The information gathered would then sync with a Google Sheet which we create macros for that would generate various statistics that are useful for the Lewisham Council.",
             "image": "./images/IQP.png",
             "tags": [
                 {
