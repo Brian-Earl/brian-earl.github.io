@@ -26,33 +26,50 @@
             ]
         },
         {
-            "title": "Dragonfly Game Engine",
-            "description": "Recreation of the Dragonfly Game Engine developed in C++ using SFML. The engine was developed over the course of several weeks as a class project. <br><br> A game using the engine was also created alongside a partner as a final test for the engine. The source code of which is also included within the repository.",
-            "image": "https://dragonfly.wpi.edu/dragonfly.gif",
+            "title": "Beckenham Place Park (III)",
+            "description": "As part of my school's IQP (Interactive Qualifying Project) program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. They originally wanted us to study and research how people used and thought of the park. However, due to COVID-19, we instead created tools to be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline that is used to perform visual observations throughout the park. The information gathered would then sync with a Google Sheet which we create macros for that would generate various statistics that are useful for the Lewisham Council.",
+            "image": "./images/IQP.png",
             "tags": [
                 {
-                    "title": "C++",
-                    "color": "is-warning"
-                },
-                {
-                    "title": "SFML",
-                    "color": "is-warning"
-                },
-                {
-                    "title": "Class Project",
+                    "title": "School Project",
                     "color": "is-danger"
                 }
             ],
             "links": [
                 {
-                    "title": "Github",
-                    "link": "https://github.com/Brian-Earl/Ireiterum"
+                    "title": "Project Page",
+                    "link": "https://wp.wpi.edu/london/projects/2020-projects-spring/lewisham/"
+                }
+            ]
+        },
+        {
+            "title": "Experimental Cinema",
+            "description": "This project is an interactive film made I created alongside a group of other students for my school's MQP program. Intended to be viewed on a mobile device, while watching, the viewer is able to interact with the film using the device's gyroscope features. Through their interactions, users can alter the course of the story and get new information of the environment. This project was made as a proof of concept for a whole new form of cinema, adapting the art form to.",
+            "image": "./images/Experimental Cinema.png",
+            "tags": [
+                {
+                    "title": "Unreal Engine",
+                    "color": "is-warning"
+                },
+                {
+                    "title": "School Project",
+                    "color": "is-danger"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Download Link",
+                    "link": "https://drive.google.com/drive/folders/1581ML0GAgSVbSmi18E2RYxTli7LFeohH?usp=sharing"
+                },
+                {
+                    "title": "Footage",
+                    "link": "https://youtu.be/6t5GyRfhGMg"
                 }
             ]
         },
         {
             "title": "Rogue-Snake",
-            "description": "Rogue Snake is a game made with Unity that builds off of the classic game of Snake. The game features the classic gameplay of Snake, however, the play field has been greatly expanded into several rooms across a randomly generated dungeon.",
+            "description": "Rogue Snake is a game made with Unity that builds off of the classic game of Snake. The game features the classic gameplay of Snake, however, the play field has been greatly expanded into several rooms across a randomly generated dungeon. This project was created over the span of a week as a class project and as a part of PROCJAM, a yearly game jam celebrating procedural generation in entertainment.",
             "image": "./images/Rogue Snake.PNG",
             "tags": [
                 {
@@ -113,29 +130,16 @@
             ]
         },
         {
-            "title": "Beckenham Place Park (III)",
-            "description": "As part of my school's IQP (Interactive Qualifying Project) program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. They originally wanted us to study and research how people used and thought of the park. However, due to COVID-19, we instead created tools to be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline that is used to perform visual observations throughout the park. The information gathered would then sync with a Google Sheet which we create macros for that would generate various statistics that are useful for the Lewisham Council.",
-            "image": "./images/IQP.png",
+            "title": "Custom NPC System Demonstration",
+            "description": "As part of a game I developed along side a team for a class project, I created a system that streamlined the creation of NPCs to populate our world. Using a spreadsheet managed in Google Sheets, the team's artists and writers were able to easily write dialogue without needing to delve into the engine itself. For the class, I gave a presentation that ran through the workflow of creating an NPC for our game and how the system significantly streamlined the process.",
+            "image": "./images/NPC System.jpeg",
             "tags": [
                 {
-                    "title": "School Project",
-                    "color": "is-danger"
-                }
-            ],
-            "links": [
+                    "title": "Unreal Engine",
+                    "color": "is-warning"
+                },
                 {
-                    "title": "Project Page",
-                    "link": "https://wp.wpi.edu/london/projects/2020-projects-spring/lewisham/"
-                }
-            ]
-        },
-        {
-            "title": "Experimental Cinema",
-            "description": "This project is an interactive film made I created alongside a group of other students for my school's MQP program. Intended to be viewed on a mobile device, while watching, the viewer is able to interact with the film using the device's gyroscope features. Through their interactions, users can alter the course of the story and get new information of the environment. This project was made as a proof of concept for a whole new form of cinema, adapting the art form to.",
-            "image": "./images/Experimental Cinema.png",
-            "tags": [
-                {
-                    "title": "Unreal Engine ",
+                    "title": "Google Sheets",
                     "color": "is-warning"
                 },
                 {
@@ -145,12 +149,8 @@
             ],
             "links": [
                 {
-                    "title": "Download Link",
-                    "link": "https://drive.google.com/drive/folders/1581ML0GAgSVbSmi18E2RYxTli7LFeohH?usp=sharing"
-                },
-                {
-                    "title": "Footage",
-                    "link": "https://youtu.be/6t5GyRfhGMg"
+                    "title": "Video Demonstration",
+                    "link": "https://youtu.be/MsaUh4AWrFk"
                 }
             ]
         }
