@@ -1,3 +1,8 @@
+html,body
+{
+    overflow-x: hidden;
+}
+
 .equal-height .card-content {
     flex: auto;
 }
