@@ -14,7 +14,6 @@ html,body
 
 .equal-height .card-main-body {
     overflow-y: auto;
-    text-overflow: ellipsis;
     max-height: 25vh;
     min-height: 25vh;
 }
