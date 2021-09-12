@@ -131,7 +131,7 @@
         },
         {
             "title": "Custom NPC System Demonstration",
-            "description": "As part of a game I developed along side a team for a class project, I created a system that streamlined the creation of NPCs to populate our world. Using a spreadsheet managed in Google Sheets, the team's artists and writers were able to easily write dialogue without needing to delve into the engine itself. For the class, I gave a presentation that ran through the workflow of creating an NPC for our game and how the system significantly streamlined the process.",
+            "description": "To assist in the development of a game created for a class project, I created a system that streamlined the creation of NPCs to populate our world. Through the use of spreadsheets managed in Google Sheets, the team's artists and writers were able to easily write dialogue without needing to delve into the engine itself. As part of the class, I gave a presentation that ran through the workflow of creating an NPC for our game and how the system significantly streamlined the process.",
             "image": "./images/NPC_System.jpeg",
             "tags": [
                 {
