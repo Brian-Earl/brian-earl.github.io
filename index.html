@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" href="Icon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -21,33 +22,39 @@
                 <h1 style="font-size: 65px;" class="title is-1 centered">
                     Brian Earl
                 </h1>
-                <a style="padding: 1%;" href="mailto:bearl@wpi.edu"><span class="icon subtitle">
+                <a style="padding: 1em;" href="mailto:bearl@wpi.edu">
+                    <span class="icon subtitle">
                         <i class="fas fa-envelope fa-2x"></i>
-                    </span></a>
-                <a style="padding: 1%;" href="https://github.com/Brian-Earl/"><span class="icon subtitle">
+                    </span>
+                </a>
+                <a style="padding: 1em;" href="https://github.com/Brian-Earl/">
+                    <span class="icon subtitle">
                         <i class="fab fa-github fa-2x"></i>
-                    </span></a>
-                <a style="padding: 1%;" href="https://www.linkedin.com/in/brian-earl-496b88182/"><span
-                        class="icon subtitle">
+                    </span>
+                </a>
+                <a style="padding: 1em;" href="https://www.linkedin.com/in/brian-earl-496b88182/">
+                    <span class="icon subtitle">
                         <i class="fab fa-linkedin-in fa-2x"></i>
-                    </span></a>
-                <a style="padding: 1%;" href="./resume.html"
-                    download="Brian Earl - Resume"><span class="icon subtitle">
+                    </span>
+                </a>
+                <a style="padding: 1em;" href="./documents/Brian_Earl_Resume.pdf" download="Brian Earl - Resume">
+                    <span class="icon subtitle">
                         <i class="fas fa-file fa-2x"></i>
-                    </span></a>
+                    </span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Me Box -->
-    <div style="padding: 2% 5%;">
+    <div class="is-hidden-touch" style="padding: 2% 5%;">
         <div class="box has-background-grey-lighter">
             <div class="card">
                 <article class="media">
                     <figure class="media-left">
                         <div class="column is-vcentered">
                             <p class="image is-128x128">
-                                <img src="./images/Picture Of Me.jpg">
+                                <img src="./images/Self_Portrait.jpg">
                             </p>
                         </div>
                     </figure>
@@ -75,6 +82,40 @@
         </div>
     </div>
 
+    <div class="columns">
+        <div class="is-hidden-desktop box has-background-grey-lighter">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image">
+                        <img src="./images/Self_Portrait.jpg">
+                        </img>
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="Media">
+                        <div class="media-content">
+                            <p class="title is-5">
+                                <strong>About Me</strong>
+                            </p>
+                            <p style="padding-right: 1%; padding-bottom: 2%;">
+                                I am a graduate from Worcester Polytechnic Institute, where I earned a double major in
+                                Computer Science and Interactive Media and Game Development. As a student from WPI, I
+                                have gained valuable classroom and project experiences that I am looking to leverage.
+                                WPI’s philosophy of project based learning and its stress on team based projects as part
+                                of the curriculum have helped me gain not only exposure to topics within my majors, but
+                                invaluable experience working and collaborating as a member of a team in order to gain
+                                hands-on training as well. I am hoping to obtain a challenging position or internship
+                                that combines my studies with my passion for creating new things and solving problems. I
+                                am adaptable and driven with a strong work ethic and the ability to thrive in team-based
+                                or individually motivated settings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Project Title -->
     <div>
         <h1 class="title is-1" style="padding: 2% 5%;">
@@ -82,7 +123,7 @@
         </h1>
     </div>
 
-    <!-- Projects Go Here -->
+    <!-- Projects -->
     <div class="columns is-multiline" style="padding: 0% 10%;" id="cardBody">
     </div>
     <script src="index.js"></script>

@@ -20,7 +20,7 @@
             ],
             "links": [
                 {
-                    "title": "Github",
+                    "title": "Source Code",
                     "link": "https://github.com/brycecorbitt/FlashGuard"
                 }
             ]
@@ -45,7 +45,7 @@
         {
             "title": "Experimental Cinema",
             "description": "This project is an interactive film made I created alongside a group of other students for my school's MQP program. Intended to be viewed on a mobile device, while watching, the viewer is able to interact with the film using the device's gyroscope features. Through their interactions, users can alter the course of the story and get new information of the environment. This project was made as a proof of concept for a whole new form of cinema, adapting the art form to.",
-            "image": "./images/Experimental Cinema.png",
+            "image": "./images/Experimental_Cinema.png",
             "tags": [
                 {
                     "title": "Unreal Engine",
@@ -62,7 +62,7 @@
                     "link": "https://drive.google.com/drive/folders/1581ML0GAgSVbSmi18E2RYxTli7LFeohH?usp=sharing"
                 },
                 {
-                    "title": "Footage",
+                    "title": "Video Demo",
                     "link": "https://youtu.be/6t5GyRfhGMg"
                 }
             ]
@@ -70,7 +70,7 @@
         {
             "title": "Rogue-Snake",
             "description": "Rogue Snake is a game made with Unity that builds off of the classic game of Snake. The game features the classic gameplay of Snake, however, the play field has been greatly expanded into several rooms across a randomly generated dungeon. This project was created over the span of a week as a class project and as a part of PROCJAM, a yearly game jam celebrating procedural generation in entertainment.",
-            "image": "./images/Rogue Snake.PNG",
+            "image": "./images/Rogue_Snake.PNG",
             "tags": [
                 {
                     "title": "C#",
@@ -91,7 +91,7 @@
             ],
             "links": [
                 {
-                    "title": "Github",
+                    "title": "Source Code",
                     "link": "https://github.com/kreiselman/Rogue-Snake"
                 },
                 {
@@ -132,7 +132,7 @@
         {
             "title": "Custom NPC System Demonstration",
             "description": "As part of a game I developed along side a team for a class project, I created a system that streamlined the creation of NPCs to populate our world. Using a spreadsheet managed in Google Sheets, the team's artists and writers were able to easily write dialogue without needing to delve into the engine itself. For the class, I gave a presentation that ran through the workflow of creating an NPC for our game and how the system significantly streamlined the process.",
-            "image": "./images/NPC System.jpeg",
+            "image": "./images/NPC_System.jpeg",
             "tags": [
                 {
                     "title": "Unreal Engine",

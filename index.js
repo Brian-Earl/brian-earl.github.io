@@ -1,3 +1,5 @@
+//Credit for better footers goes to https://stackoverflow.com/questions/53076202/stick-div-at-the-bottom-of-equally-height-cards
+
 const body = document.getElementById("cardBody");
 
 $.getJSON('https://raw.githubusercontent.com/Brian-Earl/brian-earl.github.io/master/index.json', function (data) {
@@ -6,7 +8,7 @@ $.getJSON('https://raw.githubusercontent.com/Brian-Earl/brian-earl.github.io/mas
 
 function createCard(cardData) {
     base = document.createElement('div');
-    base.className = "column is-one-third"
+    base.className = "column is-one-third-desktop is-full-touch"
     body.appendChild(base)
 
     frame = document.createElement('div');
@@ -14,7 +16,7 @@ function createCard(cardData) {
     base.appendChild(frame)
 
     card = document.createElement('div')
-    card.className = "card"
+    card.className = "card equal-height"
     frame.appendChild(card)
 
     cardImage = document.createElement('div')
@@ -45,7 +47,6 @@ function createCard(cardData) {
     cardTitleText = document.createElement('p')
     cardTitleText.className = "title is-4"
     cardTitleText.innerHTML = cardData.title
-    cardTitleText.style = "margin-bottom:25px;"
     cardMediaContent.appendChild(cardTitleText)
 
     cardTags = document.createElement('div')
@@ -59,24 +60,24 @@ function createCard(cardData) {
         cardTags.appendChild(tagSpan)
     });
 
-    cardDescription = document.createElement('div')
-    cardDescription.className = "content truncate"
-    cardDescription.innerHTML = cardData.description
-    //truncate(cardDescription, 200, '...')
-    cardContent.appendChild(cardDescription)
+    cardMainBody = document.createElement('div')
+    cardMainBody.className = "card-main-body"
+    cardMainBody.innerHTML = cardData.description
+    //truncate(cardMainBody, 200, '...')
+    cardContent.appendChild(cardMainBody)
 
-    buttonOutter = document.createElement('div')
-    buttonOutter.style = "padding-top: 3%;"
-    cardDescription.appendChild(buttonOutter)
+    cardFooter = document.createElement('footer')
+    cardFooter.className = "card-footer"
+    card.appendChild(cardFooter)
 
     cardData.links.forEach((element) => {
         buttonLink = document.createElement('a')
         buttonLink.href = element.link
-        buttonOutter.appendChild(buttonLink)
+        //buttonLink.style = "margin-right:10px;"
+        cardFooter.appendChild(buttonLink)
         button = document.createElement('button')
-        button.className = "button is-link"
+        button.className = "card-footer-item button is-link"
         button.innerHTML = element.title
-        button.style = "margin-right:10px;"
         buttonLink.appendChild(button)
     });
 }

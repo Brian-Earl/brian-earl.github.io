@@ -1,0 +1,19 @@
+.equal-height .card-content {
+    flex: auto;
+}
+
+.equal-height .card-footer {
+    padding: 3%;
+    justify-content: space-evenly;
+}
+
+.equal-height .card-main-body {
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    max-height: 25vh;
+    min-height: 25vh;
+}
+
+.equal-height .title {
+    margin-bottom:25px;
+}
