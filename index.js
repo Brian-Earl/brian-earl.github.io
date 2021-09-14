@@ -75,6 +75,7 @@ function createCard(cardData) {
             console.log(element.color + " is not a supported color");
             tagSpan.className = "tag";
         }
+        tagSpan.innerHTML = element.title
         cardTags.appendChild(tagSpan)
     });
 
