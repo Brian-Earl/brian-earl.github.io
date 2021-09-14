@@ -82,7 +82,6 @@ function createCard(cardData) {
     cardMainBody = document.createElement('div')
     cardMainBody.className = "card-main-body"
     cardMainBody.innerHTML = cardData.description
-    //truncate(cardMainBody, 200, '...')
     cardContent.appendChild(cardMainBody)
 
     cardFooter = document.createElement('footer')
@@ -92,36 +91,10 @@ function createCard(cardData) {
     cardData.links.forEach((element) => {
         buttonLink = document.createElement('a')
         buttonLink.href = element.link
-        //buttonLink.style = "margin-right:10px;"
         cardFooter.appendChild(buttonLink)
         button = document.createElement('button')
         button.className = "card-footer-item button is-link"
         button.innerHTML = element.title
         buttonLink.appendChild(button)
     });
-}
-
-var truncate = function (elem, limit, after) {
-    if (elem.innerHTML.length > limit) {
-        //(content.count('<br>')
-        var content = elem.innerHTML
-        content = elem.innerHTML.slice(0, limit)
-        console.log(content)
-        // if ((content.count('<br><br>')) > 0) {
-        //     content = content.slice(0, length - (content.count('<br><br>') * 50))
-        // }
-        content = reverse(content)
-        content = content.slice(content.indexOf(' ') + 1, content.length)
-        content = reverse(content)
-        content += after
-        elem.innerHTML = content
-    }
-};
-
-function reverse(s) {
-    return s.split("").reverse().join("");
-}
-
-String.prototype.count = function (s1) {
-    return (this.length - this.replace(new RegExp(s1, "g"), '').length) / s1.length;
 }
