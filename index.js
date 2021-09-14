@@ -67,12 +67,13 @@ function createCard(cardData) {
 
     cardData.tags.forEach((element) => {
         tagSpan = document.createElement('span')
+        console.log(element.color)
         if(colors.has(element.color)){
             tagSpan.className = "tag " + colors.get(element.color);
         }
         else{
             console.log(element.color + " is not a supported color");
-            tagSpan.className = "tag ";
+            tagSpan.className = "tag";
         }
         cardTags.appendChild(tagSpan)
     });
