@@ -2,6 +2,18 @@
 
 const body = document.getElementById("cardBody");
 
+const colors = new Map();
+colors.set("black", "is-black");
+colors.set("darkGrey", "is-dark");
+colors.set("lightGrey", "is-light");
+colors.set("white", "is-white");
+colors.set("teal", "is-primary");
+colors.set("darkBlue", "is-link");
+colors.set("lightBlue", "is-info");
+colors.set("green", "is-success");
+colors.set("yellow", "is-warning");
+colors.set("red", "is-danger");
+
 $.getJSON('https://raw.githubusercontent.com/Brian-Earl/brian-earl.github.io/master/index.json', function (data) {
     data.cards.forEach(createCard);
 });
@@ -55,8 +67,13 @@ function createCard(cardData) {
 
     cardData.tags.forEach((element) => {
         tagSpan = document.createElement('span')
-        tagSpan.className = "tag " + element.color
-        tagSpan.innerHTML = element.title
+        if(colors.has(element.color)){
+            tagSpan.className = "tag " + colors.get(element.color);
+        }
+        else{
+            console.log(element.color + " is not a supported color");
+            tagSpan.className = "tag ";
+        }
         cardTags.appendChild(tagSpan)
     });
 

@@ -7,15 +7,15 @@
             "tags": [
                 {
                     "title": "Python",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "Hackathon",
-                    "color": "is-danger"
+                    "color": "red"
                 },
                 {
                     "title": "72 Hours",
-                    "color": "is-danger"
+                    "color": "red"
                 }
             ],
             "links": [
@@ -32,7 +32,7 @@
             "tags": [
                 {
                     "title": "School Project",
-                    "color": "is-danger"
+                    "color": "red"
                 }
             ],
             "links": [
@@ -49,11 +49,11 @@
             "tags": [
                 {
                     "title": "Unreal Engine",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "School Project",
-                    "color": "is-danger"
+                    "color": "red"
                 }
             ],
             "links": [
@@ -74,19 +74,19 @@
             "tags": [
                 {
                     "title": "C#",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "Unity",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "PROCJAM 2019",
-                    "color": "is-danger"
+                    "color": "red"
                 },
                 {
                     "title": "Class Project",
-                    "color": "is-danger"
+                    "color": "red"
                 }
             ],
             "links": [
@@ -107,15 +107,15 @@
             "tags": [
                 {
                     "title": "JavaScript",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "WebGL",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "Class Project",
-                    "color": "is-danger"
+                    "color": "red"
                 }
             ],
             "links": [
@@ -136,15 +136,15 @@
             "tags": [
                 {
                     "title": "Unreal Engine",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "Google Sheets",
-                    "color": "is-warning"
+                    "color": "yellow"
                 },
                 {
                     "title": "School Project",
-                    "color": "is-danger"
+                    "color": "red"
                 }
             ],
             "links": [
