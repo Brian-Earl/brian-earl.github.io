@@ -1,23 +1,61 @@
-html,body
-{
-    overflow-x: hidden;
+/* CUSTOM CSS
+-------------------------------------------------- */
+.about-me-content {
+    margin-bottom: 1em;
 }
 
-.equal-height .card-content {
-    flex: auto;
+.badges {
+    margin-bottom: 3%;
 }
 
-.equal-height .card-footer {
-    padding: 3%;
-    justify-content: space-evenly;
+.button-badge-spacing {
+    margin-right: 2%;
 }
 
-.equal-height .card-main-body {
-    overflow-y: auto;
-    max-height: 25vh;
-    min-height: 25vh;
+.x-icon {
+    margin-left: 20px;
 }
 
-.equal-height .title {
-    margin-bottom:25px;
+/* BOOTSTRAP CSS
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing h2 {
+  font-weight: 400;
 }
+
+.marketing .row {
+    margin-bottom: 0.5em;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- 
+
+@media (min-width: 40em) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+*/

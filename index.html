@@ -1,65 +1,118 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-    <title>Brian Earl</title>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <title>Brian Earl - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Fontawesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css" />
+
+    <!-- Icon -->
     <link rel="shortcut icon" href="Icon.ico" />
+
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+  </head>
 
-<body class="has-background-white-ter">
-
-    <!-- Top Bar Header -->
-    <section class="hero is-dark">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 style="font-size: 65px;" class="title is-1 centered">
-                    Brian Earl
-                </h1>
-                <a style="padding: 1em;" href="mailto:bearl@wpi.edu">
-                    <span class="icon subtitle">
-                        <i class="fas fa-envelope" style="font-size: 40px;"></i>
-                    </span>
-                </a>
-                <a style="padding: 1em;" href="https://github.com/Brian-Earl/">
-                    <span class="icon subtitle">
-                        <i class="fab fa-github" style="font-size: 40px;"></i>
-                    </span>
-                </a>
-                <a style="padding: 1em;" href="https://www.linkedin.com/in/brian-earl-496b88182/">
-                    <span class="icon subtitle">
-                        <i class="fab fa-linkedin-in" style="font-size: 40px;"></i>
-                    </span>
-                </a>
-                <a style="padding: 1em;" href="./documents/Brian_Earl_Resume.pdf">
-                    <span class="icon subtitle">
-                        <i class="fas fa-file-alt" style="font-size: 40px;"></i>
-                    </span>
-                </a>
-            </div>
+  <body style="background-color: rgb(245, 245, 245)">
+    <!-- Header -->
+    <header class="bg-dark py-5 mb-5">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-12 text-center">
+            <h1 class="display-3 text-white"><strong>Brian Earl</strong></h1>
+          </div>
+          <div class="col-lg-12 text-center">
+            <a style="padding: 1%" href="mailto:bearl@wpi.edu"
+              ><span class="icon subtitle">
+                <i class="fas fa-envelope fa-2x text-white"></i> </span
+            ></a>
+            <a style="padding: 1%" href="https://github.com/Brian-Earl/"
+              ><span class="icon subtitle">
+                <i class="fab fa-github fa-2x text-white"></i> </span
+            ></a>
+            <a
+              style="padding: 1%"
+              href="https://www.linkedin.com/in/brian-earl-496b88182/"
+              ><span class="icon subtitle">
+                <i class="fab fa-linkedin-in fa-2x text-white"></i> </span
+            ></a>
+            <a
+              style="padding: 1%"
+              href="./public/Brian Earl - Cubic.DOCX-4.pdf"
+              download="Brian Earl - Resume"
+              ><span class="icon subtitle">
+                <i class="fas fa-address-card fa-2x text-white"></i> </span
+            ></a>
+          </div>
         </div>
-    </section>
+      </div>
+    </header>
 
-    <!-- About Me Box -->
-    <div id="aboutMe">
+    <div class="container marketing">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">About Me</h2>
+        </div>
+      </div>
+      <div class="row featurette about-me-content">
+        <div class="col-md-auto">
+          <p class="lead" id="aboutMe">
+          </p>
+        </div>
+      </div>
+      <div class="row featurette justify-content-md-center">
+        <div class="col-md-6">
+          <img
+            class="featurette-image img-fluid rounded-circle"
+            id="aboutMeImage"
+          />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- Page Content -->
+      <div class="container">
+        <!-- Project Title -->
+        <div class="row">
+          <h1>Projects</h1>
+        </div>
+
+        <h3 class="row" style="padding-bottom: 2%" id="perminant-filters">
+          <a class="badge badge-primary add-filter-badge button-badge-spacing" filter="School Project">
+            Show School Projects
+          </a> 
+        </h3>
+
+        <h4 class="row" style="padding-bottom: 2%" id="filters">
+        </h4>
+
+        <!-- Projects Body -->
+        <div class="row" id="projects">
+        </div>
+      </div>
     </div>
 
-    <!-- Project Title -->
-    <div>
-        <h1 class="title is-1" style="padding: 0% 5%;">
-            Projects
-        </h1>
-    </div>
-
-    <!-- Projects -->
-    <div class="columns is-multiline" style="padding: 3% 5%;" id="cardBody">
-    </div>
+    <!-- Custom JS -->
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

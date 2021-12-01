@@ -1,219 +1,188 @@
 //Credit for better footers goes to https://stackoverflow.com/questions/53076202/stick-div-at-the-bottom-of-equally-height-cards
+//Credit for preventing doubles goes to https://stackoverflow.com/questions/1988349/array-push-if-does-not-exist
 
-const cardbody = document.getElementById("cardBody");
-const aboutMeBody = document.getElementById("aboutMe")
+const projects = document.getElementById("projects");
+const aboutMe = document.getElementById("aboutMe");
+const aboutMeImage = document.getElementById("aboutMeImage");
+const filtersElement = document.getElementById("filters");
 
 const colors = new Map();
-colors.set("black", "is-black");
-colors.set("darkGrey", "is-dark");
-colors.set("lightGrey", "is-light");
-colors.set("white", "is-white");
-colors.set("teal", "is-primary");
-colors.set("darkBlue", "is-link");
-colors.set("lightBlue", "is-info");
-colors.set("green", "is-success");
-colors.set("yellow", "is-warning");
-colors.set("red", "is-danger");
+colors.set("black", "dark");
+colors.set("grey", "secondary");
+colors.set("white", "light");
+colors.set("teal", "info");
+colors.set("blue", "primary");
+colors.set("green", "success");
+colors.set("yellow", "warning");
+colors.set("red", "danger");
 
-$.getJSON('https://raw.githubusercontent.com/Brian-Earl/brian-earl.github.io/master/index.json', function (data) {
-    console.log(data);
+let tagFilters = [];
+
+$.getJSON(
+  "https://raw.githubusercontent.com/Brian-Earl/brian-earl.github.io/master/index.json",
+  function (data) {
     createAboutMe(data.aboutMe);
     data.cards.forEach(createCard);
-});
+    addEvents();
+  }
+);
 
 function createAboutMe(aboutMeData) {
-    console.log(aboutMeData);
-    createDesktopAboutMe(aboutMeData)
-    createMobileAboutMe(aboutMeData)
-}
+    aboutMe.innerHTML = aboutMeData.description
 
-function createDesktopAboutMe(aboutMeData) {
-    base = document.createElement('div');
-    base.className = "is-hidden-touch";
-    base.style = "padding: 2% 5%;"
-    aboutMeBody.appendChild(base);
-
-    frame = document.createElement('div');
-    frame.className = "box has-background-grey-lighter";
-    base.appendChild(frame);
-
-    card = document.createElement('div')
-    card.className = "card"
-    frame.appendChild(card)
-
-    media = document.createElement('article')
-    media.className = "media"
-    card.appendChild(media)
-
-    mediaLeft = document.createElement('figure')
-    mediaLeft.className = "media-left"
-    media.appendChild(mediaLeft)
-
-    column = document.createElement('div')
-    column.className = "column"
-    mediaLeft.appendChild(column)
-
-    image = document.createElement('p')
-    image.className = "image is-128x128"
-    column.appendChild(image)
-
-    imageSource = document.createElement('img')
-    imageSource.src = aboutMeData.image
-    imageSource.alt = "Loading..."
-    image.appendChild(imageSource)
-
-    mediaContent = document.createElement('div')
-    mediaContent.className = "media-content"
-    media.appendChild(mediaContent)
-
-    content = document.createElement('div')
-    content.className = "content"
-    content.style = "padding-top: 1%;"
-    mediaContent.appendChild(content)
-
-    title = document.createElement('p')
-    title.className = "title is-5"
-    content.appendChild(title)
-
-    strong = document.createElement('strong')
-    strong.innerHTML = "About Me"
-    title.appendChild(strong)
-
-    description = document.createElement('p')
-    description.style = "padding-right: 1%; padding-bottom: 2%;"
-    description.innerHTML = "I am a graduate from Worcester Polytechnic Institute, where I earned a double major in Computer Science and Interactive Media and Game Development. As a student from WPI, I have gained valuable classroom and project experiences that I am looking to leverage. WPI’s philosophy of project based learning and its stress on team based projects as part of the curriculum have helped me gain not only exposure to topics within my majors, but invaluable experience working and collaborating as a member of a team in order to gain hands-on training as well. I am adaptable and driven with a strong work ethic and the ability to thrive in team-based or individually motivated settings."
-    content.append(description);
-}
-
-function createMobileAboutMe(aboutMeData) {
-    base = document.createElement('div');
-    base.className = "is-hidden-desktop columns";
-    base.style = "padding: 5%;"
-    aboutMeBody.appendChild(base);
-
-    frame = document.createElement('div');
-    frame.className = "box has-background-grey-lighter";
-    base.appendChild(frame);
-
-    card = document.createElement('div')
-    card.className = "card"
-    frame.appendChild(card)
-
-    media = document.createElement('div')
-    media.className = "card-image"
-    card.appendChild(media)
-
-    image = document.createElement('figure')
-    image.className = "image"
-    media.appendChild(image)
-
-    imageSource = document.createElement('img')
-    imageSource.src = aboutMeData.image
-    imageSource.alt = "Loading..."
-    image.appendChild(imageSource)
-
-    cardContent = document.createElement('div')
-    cardContent.className = "card-content"
-    card.appendChild(cardContent)
-
-    media = document.createElement('div')
-    media.className = "media"
-    cardContent.appendChild(media)
-
-    mediaContent = document.createElement('div')
-    mediaContent.className = "media-content"
-    media.appendChild(mediaContent)
-
-    title = document.createElement('p')
-    title.className = "title is-5"
-    mediaContent.appendChild(title)
-
-    strong = document.createElement('strong')
-    strong.innerHTML = "About Me"
-    title.appendChild(strong)
-
-    description = document.createElement('p')
-    description.style = "padding-right: 1%; padding-bottom: 2%;"
-    description.innerHTML = "I am a graduate from Worcester Polytechnic Institute, where I earned a double major in Computer Science and Interactive Media and Game Development. As a student from WPI, I have gained valuable classroom and project experiences that I am looking to leverage. WPI’s philosophy of project based learning and its stress on team based projects as part of the curriculum have helped me gain not only exposure to topics within my majors, but invaluable experience working and collaborating as a member of a team in order to gain hands-on training as well. I am adaptable and driven with a strong work ethic and the ability to thrive in team-based or individually motivated settings."
-    mediaContent.appendChild(description);
+    aboutMeImage.src = aboutMeData.image
 }
 
 function createCard(cardData) {
-    base = document.createElement('div');
-    base.className = "column is-one-third-desktop is-full-touch"
-    cardBody.appendChild(base)
+  base = document.createElement("div");
+  base.className = "col-md-6 mb-5";
+  projects.appendChild(base);
 
-    frame = document.createElement('div');
-    frame.className = "box has-background-grey-lighter"
-    base.appendChild(frame)
+  card = document.createElement("div");
+  card.className = "card h-100";
+  base.appendChild(card);
 
-    card = document.createElement('div')
-    card.className = "card equal-height"
-    frame.appendChild(card)
+  cardImage = document.createElement("img");
+  cardImage.className = "card-img-top";
+  cardImage.src = cardData.image;
+  cardImage.alt = "https://via.placeholder.com/300x200";
+  card.appendChild(cardImage);
 
-    cardImage = document.createElement('div')
-    cardImage.className = "card-image"
-    card.appendChild(cardImage)
+  cardBody = document.createElement("div");
+  cardBody.className = "card-body";
+  card.appendChild(cardBody);
 
-    cardFigure = document.createElement('figure')
-    cardFigure.className = "image is-16by9"
-    cardImage.appendChild(cardFigure)
+  cardTitle = document.createElement("h4");
+  cardTitle.className = "cardTitle";
+  cardTitle.innerHTML = cardData.title;
+  cardBody.appendChild(cardTitle);
 
-    cardImageSrc = document.createElement('img')
-    cardImageSrc.src = cardData.image
-    cardImageSrc.alt = "Loading..."
-    cardFigure.appendChild(cardImageSrc)
+  cardTags = document.createElement("h5");
+  cardTags.className = "badges";
+  cardBody.appendChild(cardTags);
 
-    cardContent = document.createElement('div')
-    cardContent.className = "card-content"
-    card.appendChild(cardContent)
+  cardData.tags.forEach((element) => {
+    tagSpan = document.createElement("a");
+    if (colors.has(element.color)) {
+      tagSpan.className =
+        "badge badge-" +
+        colors.get(element.color) +
+        " button-badge-spacing tag-badge";
+    } else {
+      console.log(element.color + " is not a supported badge color");
+      tagSpan.className = "badge";
+    }
+    tagSpan.innerHTML = element.title;
+    cardTags.appendChild(tagSpan);
+  });
 
-    cardTitle = document.createElement('div')
-    cardTitle.className = "Media"
-    cardContent.appendChild(cardTitle)
+  cardMainBody = document.createElement("p");
+  cardMainBody.className = "card-text";
+  cardMainBody.innerHTML = cardData.description;
+  cardBody.appendChild(cardMainBody);
 
-    cardMediaContent = document.createElement('div')
-    cardMediaContent.className = "media-content"
-    cardTitle.appendChild(cardMediaContent)
+  cardFooter = document.createElement("div");
+  cardFooter.className = "card-footer";
+  card.appendChild(cardFooter);
 
-    cardTitleText = document.createElement('p')
-    cardTitleText.className = "title is-4"
-    cardTitleText.innerHTML = cardData.title
-    cardMediaContent.appendChild(cardTitleText)
+  cardData.links.forEach((element) => {
+    buttonLink = document.createElement("a");
+    buttonLink.className = "btn btn-primary button-badge-spacing";
+    buttonLink.innerHTML = element.title;
+    buttonLink.href = element.link;
+    cardFooter.appendChild(buttonLink);
+  });
+}
 
-    cardTags = document.createElement('div')
-    cardTags.className = "tags"
-    cardContent.appendChild(cardTags)
+function addEvents() {
+  $(".tag-badge").on("click", function (e) {
+    addTagFilter(e.target.innerHTML);
+  });
 
-    cardData.tags.forEach((element) => {
-        tagSpan = document.createElement('span')
-        if(colors.has(element.color)){
-            tagSpan.className = "tag " + colors.get(element.color);
-        }
-        else{
-            console.log(element.color + " is not a supported color");
-            tagSpan.className = "tag";
-        }
-        tagSpan.innerHTML = element.title
-        cardTags.appendChild(tagSpan)
+  $(".add-filter-badge").on("click", function (e) {
+    clearTagFilters();
+    addTagFilter(e.target.attributes.filter.nodeValue);
+  });
+}
+
+function addTagFilter(filter) {
+    tagFilters.indexOf(filter) === -1 ? tagFilters.push(filter) : console.log("This item already exists");
+  filterElements();
+}
+
+function removeTagFilter(filter) {
+  tagFilters = tagFilters.indexOf(filter) !== -1 &&
+    tagFilters.splice(tagFilters.indexOf(tagFilters), 1);
+    if(tagFilters.length) return
+    tagFilters = []
+  filterElements();
+}
+
+function clearTagFilters() {
+  tagFilters = [];
+  filterElements();
+}
+
+function filterElements() {
+  filterRemovalBadges();
+  filterCards();
+  addFilterEvents();
+}
+
+function filterCards() {
+  let badgesElements = document.getElementsByClassName("badges");
+  Array.prototype.forEach.call(badgesElements, function (badges) {
+    let tags = [];
+    badges.childNodes.forEach((tag) => {
+      tags.push(tag.innerHTML);
     });
-
-    cardMainBody = document.createElement('div')
-    cardMainBody.className = "card-main-body"
-    cardMainBody.innerHTML = cardData.description
-    cardContent.appendChild(cardMainBody)
-
-    cardFooter = document.createElement('footer')
-    cardFooter.className = "card-footer"
-    card.appendChild(cardFooter)
-
-    cardData.links.forEach((element) => {
-        buttonLink = document.createElement('a')
-        buttonLink.href = element.link
-        cardFooter.appendChild(buttonLink)
-        button = document.createElement('button')
-        button.className = "card-footer-item button is-link"
-        button.innerHTML = element.title
-        buttonLink.appendChild(button)
+    let filterOut = false;
+    tagFilters.forEach((filter) => {
+      filterOut = filterOut || !tags.includes(filter);
     });
+    badges.parentNode.parentNode.parentNode.hidden = filterOut;
+  });
+}
+
+function filterRemovalBadges() {
+  removeAllChildNodes(filtersElement);
+  if (tagFilters.length <= 0) return;
+
+  if (tagFilters.length > 1) {
+    xIcon = document.createElement("i");
+    xIcon.className = "fas fa-times-circle text-white x-icon";
+    clearAllFilter = document.createElement("a");
+    clearAllFilter.className =
+      "badge badge-primary clear-all-filter-badge button-badge-spacing";
+    clearAllFilter.innerHTML = "Remove All Filters";
+    clearAllFilter.append(xIcon);
+    filtersElement.append(clearAllFilter);
+  }
+
+  tagFilters.forEach((element) => {
+    xIcon = document.createElement("i");
+    xIcon.className = "fas fa-times-circle text-white x-icon";
+    clearAllFilter = document.createElement("a");
+    clearAllFilter.className =
+      "badge badge-primary clear-filter-badge button-badge-spacing";
+    clearAllFilter.innerHTML = element;
+    clearAllFilter.append(xIcon);
+    filtersElement.append(clearAllFilter);
+  });
+}
+
+function addFilterEvents() {
+  $(".clear-all-filter-badge").on("click", function () {
+    clearTagFilters();
+  });
+
+  $(".clear-filter-badge").on("click", function (e) {
+    removeTagFilter(e.target.innerHTML);
+  });
+}
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
 }
