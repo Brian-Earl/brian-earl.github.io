@@ -173,6 +173,10 @@
                 {
                     "title": "School Project",
                     "color": "red"
+                },
+                {
+                    "title": "Game Development",
+                    "color": "teal"
                 }
             ],
             "links": [
