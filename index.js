@@ -28,9 +28,9 @@ $.getJSON(
 );
 
 function createAboutMe(aboutMeData) {
-    aboutMe.innerHTML = aboutMeData.description
+  aboutMe.innerHTML = aboutMeData.description;
 
-    aboutMeImage.src = aboutMeData.image
+  aboutMeImage.src = aboutMeData.image;
 }
 
 function createCard(cardData) {
@@ -106,15 +106,18 @@ function addEvents() {
 }
 
 function addTagFilter(filter) {
-    tagFilters.indexOf(filter) === -1 ? tagFilters.push(filter) : console.log("This item already exists");
+  tagFilters.indexOf(filter) === -1
+    ? tagFilters.push(filter)
+    : console.log("This item already exists");
   filterElements();
 }
 
 function removeTagFilter(filter) {
-  tagFilters = tagFilters.indexOf(filter) !== -1 &&
+  tagFilters =
+    tagFilters.indexOf(filter) !== -1 &&
     tagFilters.splice(tagFilters.indexOf(tagFilters), 1);
-    if(tagFilters.length) return
-    tagFilters = []
+  if (tagFilters.length) return;
+  tagFilters = [];
   filterElements();
 }
 
@@ -153,7 +156,7 @@ function filterRemovalBadges() {
     xIcon.className = "fas fa-times-circle text-white x-icon";
     clearAllFilter = document.createElement("a");
     clearAllFilter.className =
-      "badge badge-primary clear-all-filter-badge button-badge-spacing";
+      "badge badge-secondary clear-all-filter-badge button-badge-spacing";
     clearAllFilter.innerHTML = "Remove All Filters";
     clearAllFilter.append(xIcon);
     filtersElement.append(clearAllFilter);
@@ -164,7 +167,7 @@ function filterRemovalBadges() {
     xIcon.className = "fas fa-times-circle text-white x-icon";
     clearAllFilter = document.createElement("a");
     clearAllFilter.className =
-      "badge badge-primary clear-filter-badge button-badge-spacing";
+      "badge badge-secondary clear-filter-badge button-badge-spacing";
     clearAllFilter.innerHTML = element;
     clearAllFilter.append(xIcon);
     filtersElement.append(clearAllFilter);

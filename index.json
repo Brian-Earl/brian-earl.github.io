@@ -1,63 +1,62 @@
 {
-    "aboutMe":{
+    "aboutMe": {
         "image": "./images/Self_Portrait.jpg",
         "description": "I am a graduate from Worcester Polytechnic Institute, where I earned a double major in Computer Science and Interactive Media and Game Development. As a student from WPI, I have gained valuable classroom and project experiences that I am looking to leverage. WPI’s philosophy of project based learning and its stress on team based projects as part of the curriculum have helped me gain not only exposure to topics within my majors, but invaluable experience working and collaborating as a member of a team in order to gain hands-on training as well. I am adaptable and driven with a strong work ethic and the ability to thrive in team-based or individually motivated settings."
     },
     "cards": [
         {
-            "title": "Flashguard",
-            "description": "Project created for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video watched by the user, scanning for content that may cause seizures for people with epilepsy. If any are detected, the video will immediately pause and a pop-up warning will display.",
-            "image": "https://camo.githubusercontent.com/856f81322728b1b675475dfbb49d58972e80897d/68747470733a2f2f692e696d6775722e636f6d2f394872526d6a472e706e67",
+            "title": "Custom NPC System Demonstration",
+            "description": "To assist in the development of a game created for a class project, I created a system that streamlined the creation of NPCs to populate the game world. Through the use of a spreadsheet, managed within Google Sheets, the artists and writers were able to write dialogue and script character interactions from within a web browser. As part of the class, I gave a presentation that ran through the workflow of creating an NPC and how the system significantly streamlined the game creation process.",
+            "image": "./images/NPC_System.jpeg",
             "tags": [
                 {
-                    "title": "Python",
-                    "color": "yellow"
+                    "title": "Unreal Engine",
+                    "color": "green"
                 },
                 {
-                    "title": "Hackathon",
-                    "color": "red"
+                    "title": "Google Sheets",
+                    "color": "green"
                 },
-                {
-                    "title": "72 Hours",
-                    "color": "red"
-                }
-            ],
-            "links": [
-                {
-                    "title": "Source Code",
-                    "link": "https://github.com/brycecorbitt/FlashGuard"
-                }
-            ]
-        },
-        {
-            "title": "Beckenham Place Park (III)",
-            "description": "As part of my school's IQP (Interactive Qualifying Project) program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. They originally wanted us to study and research how people used and thought of the park. However, due to COVID-19, we instead created tools to be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline that is used to perform visual observations throughout the park. The information gathered would then sync with a Google Sheet which we create macros for that would generate various statistics that are useful for the Lewisham Council.",
-            "image": "./images/IQP.png",
-            "tags": [
                 {
                     "title": "School Project",
                     "color": "red"
+                },
+                {
+                    "title": "Game Development",
+                    "color": "teal"
+                },
+                {
+                    "title": "Tool Development",
+                    "color": "teal"
                 }
             ],
             "links": [
                 {
-                    "title": "Project Page",
-                    "link": "https://wp.wpi.edu/london/projects/2020-projects-spring/lewisham/"
+                    "title": "Video Demonstration",
+                    "link": "https://youtu.be/MsaUh4AWrFk"
                 }
             ]
         },
         {
             "title": "Experimental Cinema",
-            "description": "This project is an interactive film a group of students and I created for WPI's MQP program. Intended to be viewed on a mobile device, while watching, the viewer is able to interface with the film using the device's gyroscope features. Through their interactions, users can alter the course of the story or discover new story elements through environmental details. This project was made as a proof of concept for a whole new form of cinema, adapting the art form to take advantage of modern technology.",
+            "description": "This project is a proof of concepts for a new form of interactive film a group of students and I created as a capstone project. Designed to be viewed on mobile devices, viewers are able to interface with the film through the device's gyroscope, altering the course of the story and discovering new story elements.<br><br>As the sole programmer, I created a set of tools within Unreal Engine to that streamlined scripting of the film for the team to use without need to delve into code.",
             "image": "./images/Experimental_Cinema.png",
             "tags": [
                 {
                     "title": "Unreal Engine",
-                    "color": "yellow"
+                    "color": "green"
                 },
                 {
                     "title": "School Project",
                     "color": "red"
+                },
+                {
+                    "title": "Game Development",
+                    "color": "teal"
+                },
+                {
+                    "title": "Tool Development",
+                    "color": "teal"
                 }
             ],
             "links": [
@@ -72,35 +71,23 @@
             ]
         },
         {
-            "title": "Rogue-Snake",
-            "description": "Rogue Snake is a game made with Unity that builds off of the classic game of Snake. The game features the classic gameplay of Snake, however, the play field has been greatly expanded into several rooms across a randomly generated dungeon. This project was created over the span of a week as a class project and as a part of PROCJAM, a yearly game jam celebrating procedural generation in entertainment.",
-            "image": "./images/Rogue_Snake.PNG",
+            "title": "Flashguard",
+            "description": "A Project created over the course of 72 hours for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video the user navigates to, scanning the video's content for sections that may cause seizures for people with epilepsy. If such sections are detected, the video will immediately pause or be prevented from playing at all, displaying a pop-up warning of the potential hazards.",
+            "image": "https://camo.githubusercontent.com/856f81322728b1b675475dfbb49d58972e80897d/68747470733a2f2f692e696d6775722e636f6d2f394872526d6a472e706e67",
             "tags": [
                 {
-                    "title": "C#",
-                    "color": "yellow"
+                    "title": "Python",
+                    "color": "green"
                 },
                 {
-                    "title": "Unity",
-                    "color": "yellow"
-                },
-                {
-                    "title": "PROCJAM 2019",
-                    "color": "red"
-                },
-                {
-                    "title": "Class Project",
+                    "title": "Hackathon",
                     "color": "red"
                 }
             ],
             "links": [
                 {
                     "title": "Source Code",
-                    "link": "https://github.com/kreiselman/Rogue-Snake"
-                },
-                {
-                    "title": "Itch.io",
-                    "link": "https://kreiselman.itch.io/rogue-snake"
+                    "link": "https://github.com/brycecorbitt/FlashGuard"
                 }
             ]
         },
@@ -111,14 +98,14 @@
             "tags": [
                 {
                     "title": "JavaScript",
-                    "color": "yellow"
+                    "color": "green"
                 },
                 {
                     "title": "WebGL",
-                    "color": "yellow"
+                    "color": "green"
                 },
                 {
-                    "title": "Class Project",
+                    "title": "School Project",
                     "color": "red"
                 }
             ],
@@ -134,17 +121,54 @@
             ]
         },
         {
-            "title": "Custom NPC System Demonstration",
-            "description": "To assist in the development of a game created for a class project, I created a system that streamlined the creation of NPCs to populate our world. Through the use of spreadsheets managed in Google Sheets, the team's artists and writers were able to easily write dialogue without needing to delve into the engine itself. As part of the class, I gave a presentation that ran through the workflow of creating an NPC for our game and how the system significantly streamlined the process.",
-            "image": "./images/NPC_System.jpeg",
+            "title": "Dragonfly Game Engine",
+            "description": "A reconstruction of the Dragonfly Game Engine developed in C++ using the SFML library. The engine was developed over the course of several weeks as a class project. <br><br> As a final test, I, alongside a partner, created a game within said engine, title Ireiterum",
+            "image": "https://dragonfly.wpi.edu/dragonfly.gif",
             "tags": [
                 {
-                    "title": "Unreal Engine",
-                    "color": "yellow"
+                    "title": "C++",
+                    "color": "green"
                 },
                 {
-                    "title": "Google Sheets",
-                    "color": "yellow"
+                    "title": "SFML",
+                    "color": "green"
+                },
+                {
+                    "title": "Class Project",
+                    "color": "red"
+                },
+                {
+                    "title": "Game Development",
+                    "color": "teal"
+                }
+            ],
+            "links": [
+                {
+                    "title": "Github",
+                    "link": "https://github.com/Brian-Earl/Ireiterum"
+                },
+                {
+                    "title": "Game Trailer",
+                    "link": "https://youtu.be/uXhijyxAQlI"
+                }
+            ]
+        },
+        {
+            "title": "Rogue-Snake",
+            "description": "Rogue Snake is a game made with the Unity game engine that builds off of the classic game of Snake. Before play begins, the player is able to customize the parameters of the the play field. Upon start, the user is placed into a procedurally generated map whose size and rules match the user's input. This project was created over the span of a week as a class project and as a part of PROCJAM, a yearly game jam celebrating procedural generation in entertainment.",
+            "image": "./images/Rogue_Snake.PNG",
+            "tags": [
+                {
+                    "title": "C#",
+                    "color": "green"
+                },
+                {
+                    "title": "Unity",
+                    "color": "green"
+                },
+                {
+                    "title": "PROCJAM 2019",
+                    "color": "red"
                 },
                 {
                     "title": "School Project",
@@ -153,8 +177,12 @@
             ],
             "links": [
                 {
-                    "title": "Video Demonstration",
-                    "link": "https://youtu.be/MsaUh4AWrFk"
+                    "title": "Source Code",
+                    "link": "https://github.com/kreiselman/Rogue-Snake"
+                },
+                {
+                    "title": "Download",
+                    "link": "https://kreiselman.itch.io/rogue-snake"
                 }
             ]
         }

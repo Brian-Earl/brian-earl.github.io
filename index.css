@@ -1,19 +1,19 @@
 /* CUSTOM CSS
 -------------------------------------------------- */
 .about-me-content {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .badges {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 .button-badge-spacing {
-    margin-right: 2%;
+  margin-right: 2%;
 }
 
 .x-icon {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* BOOTSTRAP CSS
@@ -25,7 +25,7 @@
 }
 
 .marketing .row {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Featurettes
