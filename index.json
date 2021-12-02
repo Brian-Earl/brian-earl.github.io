@@ -214,7 +214,7 @@
         {
             "title": "World Happiness Report",
             "description": "As part of a class project, a group of students and I were tasked with visualizing a data set of our choice. We chose to visual a the 'World Happiness Report', a data set that breaks down and ranks the happiness of different countries based upon multiple different factors. Alongside creating the visualization, we also created a process book, a document in which we breakdown our thoughts and analysis of the data and document our design process.",
-            "image": "./images/World_Happiness.PNG",
+            "image": "./images/World_Happiness.png",
             "tags": [
                 {
                     "title": "Javascript",
@@ -231,7 +231,7 @@
             ],
             "links": [
                 {
-                    "title": "Project Page",
+                    "title": "Visualization",
                     "link": "https://bearl.dev/final/"
                 },
                 {
