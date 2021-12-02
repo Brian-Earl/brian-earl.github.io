@@ -35,7 +35,7 @@
         },
         {
             "title": "Experimental Cinema",
-            "description": "This project is a proof of concepts for a new form of interactive film a group of students and I created as a capstone project. Designed to be viewed on mobile devices, viewers are able to interface with the film through the device's gyroscope, altering the course of the story and discovering new story elements.<br><br>As the sole programmer, I created a set of tools within Unreal Engine to that streamlined scripting of the film for the team to use without need to delve into code.",
+            "description": "This project is a proof of concepts for a new form of film a group of students and I created as a capstone project. Designed to be viewed on mobile devices, viewers are able to interface with the film through the device's gyroscope, altering the course of the story and discovering new story elements.<br><br>As the sole programmer, I created a set of tools within Unreal Engine to that streamlined scripting of the film for the team to use without need to delve into code.",
             "image": "./images/Experimental_Cinema.png",
             "tags": [
                 {
