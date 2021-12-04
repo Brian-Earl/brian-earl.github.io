@@ -156,7 +156,7 @@ function filterRemovalBadges() {
     xIcon.className = "fas fa-times-circle text-white x-icon";
     clearAllFilter = document.createElement("a");
     clearAllFilter.className =
-      "badge badge-secondary clear-all-filter-badge button-badge-spacing";
+      "badge badge-secondary clear-all-filter-badge button-badge-spacing filter-button";
     clearAllFilter.innerHTML = "Remove All Filters";
     clearAllFilter.append(xIcon);
     filtersElement.append(clearAllFilter);
@@ -167,7 +167,7 @@ function filterRemovalBadges() {
     xIcon.className = "fas fa-times-circle text-white x-icon";
     clearAllFilter = document.createElement("a");
     clearAllFilter.className =
-      "badge badge-secondary clear-filter-badge button-badge-spacing";
+      "badge badge-secondary clear-filter-badge button-badge-spacing filter-button";
     clearAllFilter.innerHTML = element;
     clearAllFilter.append(xIcon);
     filtersElement.append(clearAllFilter);

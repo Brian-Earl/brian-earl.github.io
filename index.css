@@ -4,11 +4,8 @@
   margin-bottom: 1em;
 }
 
-.badges {
-  margin-bottom: 3%;
-}
-
 .button-badge-spacing {
+  margin-top: 1.3%;
   margin-right: 2%;
 }
 
@@ -18,7 +15,7 @@
 
 .card-img-top {
     width: 100%;
-    height: 15vw;
+    height: 25vh;
     object-fit: cover;
 }
 
@@ -26,10 +23,9 @@
   cursor: pointer;
 }
 
-/* BOOTSTRAP CSS
+/* BOOTSTRAP TEMPLATE CSS
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
 .marketing h2 {
   font-weight: 400;
 }
@@ -42,7 +38,8 @@
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* Thin out the marketing headings */
@@ -52,20 +49,3 @@
   /* rtl:remove */
   letter-spacing: -0.05rem;
 }
-
-/* RESPONSIVE CSS
-  -------------------------------------------------- 
-
-@media (min-width: 40em) {
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-*/
