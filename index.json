@@ -53,6 +53,10 @@
             ],
             "links": [
                 {
+                    "title": "Project Page",
+                    "link": "https://digital.wpi.edu/concern/student_works/x920g0693?locale=en"
+                },
+                {
                     "title": "Download Link",
                     "link": "https://drive.google.com/drive/folders/1581ML0GAgSVbSmi18E2RYxTli7LFeohH?usp=sharing"
                 },
@@ -108,11 +112,11 @@
             "links": [
                 {
                     "title": "Demo 1",
-                    "link": "https://bearl.dev/projects/WebGLSpotlight/Spotlight.html"
+                    "link": "./projects/WebGL - Spotlight/Spotlight.html"
                 },
                 {
                     "title": "Demo 2",
-                    "link": "https://bearl.dev/projects/WebGLTextures/Textures.html"
+                    "link": "./projects/WebGL - Textures/Textures.html"
                 }
             ]
         },
