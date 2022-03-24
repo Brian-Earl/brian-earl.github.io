@@ -1,122 +1,230 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<html id="html" lang="en"><head></head><body style="background-color: rgb(245, 245, 245)">
 
-    <title>Brian Earl - Portfolio</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Fontawesome Link -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Icon -->
-    <link rel="shortcut icon" href="Icon.ico" />
+  <title>Brian Earl - Portfolio</title>
 
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-  <body style="background-color: rgb(245, 245, 245)">
-    <!-- Header -->
-    <header class="bg-dark py-5 mb-5">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-lg-12 text-center">
-            <h1 class="display-3 text-white"><strong>Brian Earl</strong></h1>
-          </div>
-          <div class="col-lg-12 text-center">
-            <a style="padding: 1em;" href="mailto:contact@bearl.dev">
-              <span class="icon subtitle">
-                  <i class="fas fa-envelope text-white" style="font-size: 40px;"></i>
-              </span>
-          </a>
-          <a style="padding: 1em;" href="https://github.com/Brian-Earl/">
-              <span class="icon subtitle">
-                  <i class="fab fa-github text-white" style="font-size: 40px;"></i>
-              </span>
-          </a>
-          <a style="padding: 1em;" href="https://www.linkedin.com/in/brian-earl-496b88182/">
-              <span class="icon subtitle">
-                  <i class="fab fa-linkedin-in text-white" style="font-size: 40px;"></i>
-              </span>
-          </a>
-          <a style="padding: 1em;" href="./public/Brian_Earl_Resume.pdf">
-              <span class="icon subtitle">
-                  <i class="fas fa-file-alt text-white" style="font-size: 40px;"></i>
-              </span>
-          </a>
-          </div>
+  <!-- Icon -->
+  <link rel="shortcut icon" href="Icon.ico">
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<style>
+  /* CUSTOM CSS
+-------------------------------------------------- */
+  .about-me-content {
+    margin-bottom: 1em;
+  }
+
+  .button-badge-spacing {
+    margin-top: 1.3%;
+    margin-right: 2%;
+  }
+
+  .x-icon {
+    margin-left: 15px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+  }
+
+  .badge:hover {
+    cursor: pointer;
+  }
+
+  /* BOOTSTRAP TEMPLATE CSS
+-------------------------------------------------- */
+
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .marketing .row {
+    margin-bottom: 0.5em;
+  }
+
+  /* Featurettes
+------------------------- */
+
+  .featurette-divider {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -0.05rem;
+  }
+</style>
+
+
+  <!-- Header -->
+  <header class="bg-dark py-5 mb-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h1 class="display-3 text-white" id="headerName"><strong>Brian Earl</strong></h1>
         </div>
+        <div class="col-lg-12 text-center" id="headerSocials">
+        <a style="padding: 1em;" href="mailto:contact@bearl.dev"><span class="icon subtitle"><i class="text-white fas fa-envelope " style="font-size: 40px;"></i></span></a><a style="padding: 1em;" href="https://github.com/Brian-Earl/"><span class="icon subtitle"><i class="text-white fab fa-github" style="font-size: 40px;"></i></span></a><a style="padding: 1em;" href="https://www.linkedin.com/in/brian-earl-496b88182/"><span class="icon subtitle"><i class="text-white fab fa-linkedin-in" style="font-size: 40px;"></i></span></a><a style="padding: 1em;" href="./public/Brian_Earl_Resume.pdf"><span class="icon subtitle"><i class="text-white fas fa-file-alt" style="font-size: 40px;"></i></span></a></div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="container marketing">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">About Me</h2>
-        </div>
+  <div class="container marketing">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">About Me</h2>
       </div>
-      <div class="row featurette about-me-content">
-        <div class="col-md-auto">
-          <p class="lead" id="aboutMe">
-          </p>
-        </div>
+    </div>
+    <div class="row featurette about-me-content">
+      <div class="col-md-auto">
+        <p class="lead" id="aboutMe">Ambitious and dedicated individual specializing in the fields of Computer Science and Interactive Media and Game Design looking for further career development. Adaptable and driven with strong work ethic and ability to thrive in team-based or individually motivated settings. Interested and inspired by a wide range of technologies such as retro computing, novel interfaces, game development, tool creation, alternative programming languages, and accessible design.</p>
       </div>
-      <div class="row featurette justify-content-center">
-        <div class="col-4">
-          <img
-            class="featurette-image img-fluid rounded-circle"
-            id="aboutMeImage"
-            src="./images/Self_Portrait.jpg"
-          />
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <!-- Page Content -->
-      <div class="container">
-        <!-- Project Title -->
-        <div class="row">
-          <h1>Projects</h1>
-        </div>
-
-        <h3 class="row" id="perminant-filters">
-          <a class="badge badge-secondary add-filter-badge button-badge-spacing filter-button" filter="Web Development">
-            Show Web Development Projects
-          </a> 
-
-          <a class="badge badge-secondary add-filter-badge button-badge-spacing filter-button" filter="Game Development">
-            Show Game Development Projects
-          </a> 
-        </h3>
-
-        <h4 class="row" id="filters">
-        </h4>
-
-        <!-- Projects Body -->
-        <div class="row" id="projects">
-        </div>
+    </div>
+    <div class="row featurette justify-content-center">
+      <div class="col-4">
+        <img class="featurette-image img-fluid rounded-circle" id="aboutMeImage" alt="https://via.placeholder.com/300x200" src="./images/Self_Portrait.jpg">
       </div>
     </div>
 
-    <!-- Custom JS -->
-    <script src="index.js"></script>
-  </body>
-</html>
+    <hr class="featurette-divider">
+
+    <!-- Page Content -->
+    <div class="container" id="projectContainer">
+    <div class="row"><h1>Projects</h1></div><h3 class="row" id="perminant-filters"><a class="badge badge-secondary add-filter-badge button-badge-spacing filter-button" filter="Web Development">Show Web Development Projects</a><a class="badge badge-secondary add-filter-badge button-badge-spacing filter-button" filter="Game Development">Show Game Development Projects</a></h3><h4 class="row" id="filters"></h4><div class="row"><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="./images/NPC_System.jpeg" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">Custom NPC System Demonstration</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">Unreal Engine</a><a class="badge badge-success button-badge-spacing tag-badge">Google Sheets</a><a class="badge badge-info button-badge-spacing tag-badge">Game Development</a><a class="badge badge-info button-badge-spacing tag-badge">Tool Development</a></h5><p class="card-text">To assist in the development of a game created for a class project, I created a system that streamlined the creation of NPCs to populate the game world. Through the use of a spreadsheet, managed within Google Sheets, the artists and writers were able to write dialogue and script character interactions from within a web browser. As part of the class, I gave a presentation that ran through the workflow of creating an NPC and how the system significantly streamlined the game creation process.</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="https://youtu.be/MsaUh4AWrFk">Video Demonstration</a></div></div></div><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="./images/Experimental_Cinema.png" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">Experimental Cinema</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">Unreal Engine</a><a class="badge badge-info button-badge-spacing tag-badge">Game Development</a><a class="badge badge-info button-badge-spacing tag-badge">Tool Development</a></h5><p class="card-text">This project is a proof of concepts for a new form of film a group of students and I created as a capstone project. Designed to be viewed on mobile devices, viewers are able to interface with the film through the device's gyroscope, altering the course of the story and discovering new story elements.<br><br>As the sole programmer, I created a set of tools within Unreal Engine to that streamlined scripting of the film for the team to use without need to delve into code.</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="https://digital.wpi.edu/concern/student_works/x920g0693?locale=en">Project Page</a><a class="btn btn-primary button-badge-spacing" href="https://drive.google.com/drive/folders/1581ML0GAgSVbSmi18E2RYxTli7LFeohH?usp=sharing">Download Link</a><a class="btn btn-primary button-badge-spacing" href="https://youtu.be/6t5GyRfhGMg">Video Demo</a></div></div></div><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="https://camo.githubusercontent.com/856f81322728b1b675475dfbb49d58972e80897d/68747470733a2f2f692e696d6775722e636f6d2f394872526d6a472e706e67" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">Flashguard</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">Python</a><a class="badge badge-danger button-badge-spacing tag-badge">Hackathon</a><a class="badge badge-info button-badge-spacing tag-badge">Web Development</a></h5><p class="card-text">A Project created over the course of 72 hours for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video the user navigates to, scanning the video's content for sections that may cause seizures for people with epilepsy. If such sections are detected, the video will immediately pause or be prevented from playing at all, displaying a pop-up warning of the potential hazards.</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="https://github.com/brycecorbitt/FlashGuard">Source Code</a></div></div></div><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="./images/WebGl.PNG" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">WebGL Demos</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">JavaScript</a><a class="badge badge-success button-badge-spacing tag-badge">WebGL</a><a class="badge badge-info button-badge-spacing tag-badge">Web Development</a></h5><p class="card-text">Collection of project written in JavaScript using WebGL. <br><br> The first demo contains a spinning mobile with each shape and layer rotating and spinning independently from one another. A spotlight shine on the mobile that the user can freely control the size of. Additionally, the user can toggle between multiple different lighting methods for the mobile. <br><br> The second demo features the same mobile as the first demo. However, in this demo, the model spins inside of a textured room which the mobile can shine shadows onto. Additionally, the user can also enable reflection and refraction effects for the model.</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="./projects/WebGL - Spotlight/Spotlight.html">Demo 1</a><a class="btn btn-primary button-badge-spacing" href="./projects/WebGL - Textures/Textures.html">Demo 2</a></div></div></div><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="https://dragonfly.wpi.edu/dragonfly.gif" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">Dragonfly Game Engine</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">C++</a><a class="badge badge-success button-badge-spacing tag-badge">SFML</a><a class="badge badge-info button-badge-spacing tag-badge">Game Development</a></h5><p class="card-text">A reconstruction of the Dragonfly Game Engine developed in C++ using the SFML library. The engine was developed over the course of several weeks as a class project. <br><br> As a final test, I, alongside a partner, created a game within said engine, title Ireiterum</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="https://github.com/Brian-Earl/Ireiterum">Github</a><a class="btn btn-primary button-badge-spacing" href="https://youtu.be/uXhijyxAQlI">Game Trailer</a></div></div></div><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="./images/Rogue_Snake.PNG" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">Rogue-Snake</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">C#</a><a class="badge badge-success button-badge-spacing tag-badge">Unity</a><a class="badge badge-danger button-badge-spacing tag-badge">PROCJAM 2019</a><a class="badge badge-info button-badge-spacing tag-badge">Game Development</a></h5><p class="card-text">Rogue Snake is a game made with the Unity game engine that builds off of the classic game of Snake. Before play begins, the player is able to customize the parameters of the the play field. Upon start, the user is placed into a procedurally generated map whose size and rules match the user's input. This project was created over the span of a week as a class project and as a part of PROCJAM, a yearly game jam celebrating procedural generation in entertainment.</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="https://github.com/kreiselman/Rogue-Snake">Source Code</a><a class="btn btn-primary button-badge-spacing" href="https://kreiselman.itch.io/rogue-snake">Download</a></div></div></div><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="./images/IQP.png" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">Beckenham Place Park (III)</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">Javascript</a><a class="badge badge-success button-badge-spacing tag-badge">OpenStreetMap</a><a class="badge badge-success button-badge-spacing tag-badge">Google Sheets</a><a class="badge badge-success button-badge-spacing tag-badge">Excel</a><a class="badge badge-info button-badge-spacing tag-badge">Web Development</a></h5><p class="card-text">As part of a study aboard program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. Originally we were to research and observe how people used and perceived the park. However, due to travel restrictions we were force to change our plans. Instead, we created tools that could then be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline, used to perform visual observations throughout the park. The information gathered would then synced to a spread sheet once internet connection was has been establish. The information was then fed through macros we created to analyze and create statistics useful for the Lewisham Council.</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="https://wp.wpi.edu/london/projects/2020-projects-spring/lewisham/">Project Page</a></div></div></div><div class="col-md-6 mb-5"><div class="card h-100"><img class="card-img-top" src="./images/World_Happiness.PNG" alt="https://via.placeholder.com/300x200"><div class="card-body"><h4 class="cardTitle">World Happiness Report</h4><h5 class="badges"><a class="badge badge-success button-badge-spacing tag-badge">Javascript</a><a class="badge badge-success button-badge-spacing tag-badge">D3</a><a class="badge badge-info button-badge-spacing tag-badge">Web Development</a></h5><p class="card-text">As part of a class project, a group of students and I were tasked with visualizing a data set of our choice. We chose to visual a the 'World Happiness Report', a data set that breaks down and ranks the happiness of different countries based upon multiple different factors. Alongside creating the visualization, we also created a process book, a document in which we breakdown our thoughts and analysis of the data and document our design process.</p></div><div class="card-footer"><a class="btn btn-primary button-badge-spacing" href="https://bearl.dev/final/">Visualization</a><a class="btn btn-primary button-badge-spacing" href="https://bearl.dev/final/etc/Process_Book.pdf">Process Book</a></div></div></div></div></div>
+  </div>
+
+  <!-- Custom JS -->
+  
+
+
+
+</body><script>
+  
+  let tagFilters = [];
+  const filtersElement = document.getElementById("filters");
+  addEvents();
+
+  function addEvents() {
+    $(".tag-badge").on("click", function (e) {
+      addTagFilter(e.target.innerHTML);
+    });
+  
+    $(".add-filter-badge").on("click", function (e) {
+      clearTagFilters();
+      addTagFilter(e.target.attributes.filter.nodeValue);
+    });
+  }
+  
+  function addTagFilter(filter) {
+    tagFilters.indexOf(filter) === -1
+      ? tagFilters.push(filter)
+      : console.log("This item already exists");
+    filterElements();
+  }
+  
+  function removeTagFilter(filter) {
+    tagFilters =
+      tagFilters.indexOf(filter) !== -1 &&
+      tagFilters.splice(tagFilters.indexOf(tagFilters), 1);
+    if (tagFilters.length) return;
+    tagFilters = [];
+    filterElements();
+  }
+  
+  function clearTagFilters() {
+    tagFilters = [];
+    filterElements();
+  }
+  
+  function filterElements() {
+    filterRemovalBadges();
+    filterCards();
+    addFilterEvents();
+  }
+
+  function filterElements() {
+    filterRemovalBadges();
+    filterCards();
+    addFilterEvents();
+  }
+  
+  function filterCards() {
+    let badgesElements = document.getElementsByClassName("badges");
+    Array.prototype.forEach.call(badgesElements, function (badges) {
+      let tags = [];
+      badges.childNodes.forEach((tag) => {
+        tags.push(tag.innerHTML);
+      });
+      let filterOut = false;
+      tagFilters.forEach((filter) => {
+        filterOut = filterOut || !tags.includes(filter);
+      });
+      badges.parentNode.parentNode.parentNode.hidden = filterOut;
+    });
+  }
+  
+  function filterRemovalBadges() {
+    if(!filtersElement) return;
+    removeAllChildNodes(filtersElement);
+    if (tagFilters.length <= 0) return;
+  
+    if (tagFilters.length > 1) {
+      xIcon = document.createElement("i");
+      xIcon.className = "fas fa-times-circle text-white x-icon";
+      clearAllFilter = document.createElement("a");
+      clearAllFilter.className =
+        "badge badge-secondary clear-all-filter-badge button-badge-spacing filter-button";
+      clearAllFilter.innerHTML = "Remove All Filters";
+      clearAllFilter.append(xIcon);
+      filtersElement.append(clearAllFilter);
+    }
+  
+    tagFilters.forEach((element) => {
+      xIcon = document.createElement("i");
+      xIcon.className = "fas fa-times-circle text-white x-icon";
+      clearAllFilter = document.createElement("a");
+      clearAllFilter.className =
+        "badge badge-secondary clear-filter-badge button-badge-spacing filter-button";
+      clearAllFilter.innerHTML = element;
+      clearAllFilter.append(xIcon);
+      filtersElement.append(clearAllFilter);
+    });
+  }
+  
+  function addFilterEvents() {
+    $(".clear-all-filter-badge").on("click", function () {
+      clearTagFilters();
+    });
+  
+    $(".clear-filter-badge").on("click", function (e) {
+      removeTagFilter(e.target.innerHTML);
+    });
+  }
+  
+  function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
+    }
+  }
+  </script></html>

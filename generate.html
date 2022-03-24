@@ -1,0 +1,38 @@
+<html>
+
+<body>
+    <h1>Bearl's Homepage Generator</h1>
+    <h3>Release v1</h3>
+    <br />
+    <input type="file" id="selectFiles" value="Import" />
+    <br /><br />
+    <button id="import">Generate Page</button>
+</body>
+
+<script>
+
+    //Credit goes to https://jsfiddle.net/Ln37kqc0/
+    
+    document.getElementById('import').onclick = function () {
+        var files = document.getElementById('selectFiles').files;
+        console.log(files);
+        if (files.length <= 0) {
+            return false;
+        }
+
+        var fr = new FileReader();
+
+        fr.onload = function (e) {
+            console.log(e);
+            var result = JSON.parse(e.target.result);
+            console.log(result);
+            var formatted = JSON.stringify(result, null, 2);
+            console.log(formatted)
+            location.href = 'generated.html#' + formatted;
+        }
+
+        fr.readAsText(files.item(0));
+    };
+</script>
+
+</html>

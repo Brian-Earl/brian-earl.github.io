@@ -1,0 +1,128 @@
+<p id="previewView">
+  PREVIEW VIEW ONLY: 
+  <button onclick="save()">DOWNLOAD HERE</button>
+</p>
+
+<html lang="en" id="html">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Brian Earl - Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="Icon.ico" />
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style>
+  /* CUSTOM CSS
+-------------------------------------------------- */
+  .about-me-content {
+    margin-bottom: 1em;
+  }
+
+  .button-badge-spacing {
+    margin-top: 1.3%;
+    margin-right: 2%;
+  }
+
+  .x-icon {
+    margin-left: 15px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+  }
+
+  .badge:hover {
+    cursor: pointer;
+  }
+
+  /* BOOTSTRAP TEMPLATE CSS
+-------------------------------------------------- */
+
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .marketing .row {
+    margin-bottom: 0.5em;
+  }
+
+  /* Featurettes
+------------------------- */
+
+  .featurette-divider {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -0.05rem;
+  }
+</style>
+
+<body style="background-color: rgb(245, 245, 245)">
+  <!-- Header -->
+  <header class="bg-dark py-5 mb-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h1 class="display-3 text-white" id="headerName"></h1>
+        </div>
+        <div class="col-lg-12 text-center" id="headerSocials">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container marketing">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">About Me</h2>
+      </div>
+    </div>
+    <div class="row featurette about-me-content">
+      <div class="col-md-auto">
+        <p class="lead" id="aboutMe">
+        </p>
+      </div>
+    </div>
+    <div class="row featurette justify-content-center">
+      <div class="col-4">
+        <img class="featurette-image img-fluid rounded-circle" id="aboutMeImage" alt="https://via.placeholder.com/300x200"/>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- Page Content -->
+    <div class="container" id="projectContainer">
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script id="mainScript" class="mainScript" src="index.js"></script>
+
+</body>
+
+</html>
