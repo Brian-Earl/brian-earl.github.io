@@ -1,0 +1,115 @@
+{
+    "features": {
+        "filters": false
+    },
+    "header": {
+        "name": "John Frazia",
+        "socials": [
+            {
+                "type": "email",
+                "link": "mailto:jfrazia@wpi.edu"
+            },
+            {
+                "type": "github",
+                "link": "https://github.com/Jfrazia"
+            },
+            {
+                "type": "linkedin",
+                "link": "https://www.linkedin.com/in/john-frazia-309a8a169/"
+            },
+            {
+                "type": "pdf",
+                "link": "https://jfrazia.github.io/documents/John_Frazia_Resume.pdf"
+            }
+        ]
+    },
+    "aboutMe": {
+        "image": "./images/John_Frazia_Picture.jpg",
+        "description": "Hardworking senior of Worcester Polytechnic Institute's (WPI) Interactive Media & Game Development major, specializing in audio engineering and game design. Despite my specialization, I also have experience programming and am familiar with design patterns such as finite state machines. WPI's focus and dedication on to project based learning curriculum has equipped with the knowledge, work ethic and team skills needed to be part of an efficient team.The curriculum has also put my leadership skills to the test, requiring me to step up to the plate to produce products with up to class sized teams."
+    },
+    "cardSections": [
+        {
+            "name": "Projects",
+            "cards": [
+                {
+                    "title": "Tsubo-Niwa: A Garden Dream",
+                    "description": "For my graduate studio course, I was tasked with assisting with an undergraduate capstone project. This was a VR audio experience that had an external client in Kyoto that we worked with. I handled the audio implemenation and editing. More specifically, getting spatialization working for our flock and having said flock's sound changed depending on the distance between the player and the flock. I also worked with binarual beats, implementing them within Unity. I sadly do not have a way to access this project at the moment, but hopefully soon I can either have an exe or a link to the exhibit.",
+                    "image": "./images/Tsubo-Niwa.PNG",
+                    "tags": [
+                        {
+                            "title": "Unity",
+                            "color": "yellow"
+                        },
+                        {
+                            "title": "Soon-To-Be Published",
+                            "color": "red"
+                        },
+                        {
+                            "title": "Audio Work",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Drive Video",
+                            "link": "https://drive.google.com/file/d/1HbEqLn9EPchD0C6PQPTyGNTWRsEJmr7B/view"
+                        }
+                    ]
+                },
+                {
+                    "title": "Gravity Xscape",
+                    "description": "In my undergraduate studio course, two others and I were tasked with making a game in seven weeks. We split the responsibilites of the game, with me being in charge of audio production and implementation. I created two songs for the game, trying to focus more on fitting the theme instead of having a perfect song.",
+                    "image": "./images/Gravity_Xscape.PNG",
+                    "tags": [
+                        {
+                            "title": "Unity",
+                            "color": "yellow"
+                        },
+                        {
+                            "title": "School Project",
+                            "color": "red"
+                        },
+                        {
+                            "title": "Audio Work",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Drive Link",
+                            "link": "./projects/Gravity_Xscape.zip"
+                        }
+                    ]
+                },
+                {
+                    "title": "Visual Novel MQP",
+                    "description": "A current work-in-progress Visual Novel created for my capstone project. My responsibilities consist of writing, coding, game design, music composition, and audio engineering.",
+                    "image": "./images/NEH1.png",
+                    "tags": [
+                        {
+                            "title": "Ren'Py",
+                            "color": "yellow"
+                        },
+                        {
+                            "title": "School Project",
+                            "color": "red"
+                        },
+                        {
+                            "title": "Audio Work",
+                            "color": "teal"
+                        },
+                        {
+                            "title": "Design Work",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Under Construction!"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
