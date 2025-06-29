@@ -1,6 +1,6 @@
 {
     "features": {
-        "filters": false
+        "filters": true
     },
     "header": {
         "name": "John Frazia",
@@ -30,12 +30,26 @@
     "cardSections": [
         {
             "name": "Projects",
+            "filters": [
+                {
+                    "display": "Show Game Development Projects",
+                    "filter": "Game Development"
+                },
+                {
+                    "display": "Show Non-Game Development Projects",
+                    "filter": "Non-Game Development"
+                }
+            ],
             "cards": [
                 {
                     "title": "Tsubo-Niwa: A Garden Dream",
-                    "description": "For my graduate studio course, I was tasked with assisting with an undergraduate capstone project. This was a VR audio experience that had an external client in Kyoto that we worked with. I handled the audio implemenation and editing. More specifically, getting spatialization working for our flock and having said flock's sound changed depending on the distance between the player and the flock. I also worked with binarual beats, implementing them within Unity. I sadly do not have a way to access this project at the moment, but hopefully soon I can either have an exe or a link to the exhibit.",
+                    "description": "For a graduate class, I was the audio lead for a VR audio experience that involved an external client in Kyoto. I effectively worked a 9-5 with this job, balancing it with my other course-load. I handled the audio implemenation and editing such as, getting spatialization working for our flock and having said flock's sound changed depending on the distance between the player and the flock. I also worked with binarual beats, implementing them within Unity. I was given pre-set audio clips from our external client, sadly not able to make my own.",
                     "image": "./images/Tsubo-Niwa.PNG",
                     "tags": [
+                        {
+                            "title":"Game Development",
+                            "color":"green"
+                        },
                         {
                             "title": "Unity",
                             "color": "yellow"
@@ -58,9 +72,13 @@
                 },
                 {
                     "title": "Gravity Xscape",
-                    "description": "In my undergraduate studio course, two others and I were tasked with making a game in seven weeks. We split the responsibilites of the game, with me being in charge of audio production and implementation. I created two songs for the game, trying to focus more on fitting the theme instead of having a perfect song.",
+                    "description": "In my undergraduate studio course, I made a game with 2 others in seven weeks. We split the responsibilites of the game, and I was our audio lead. I created two songs for the game, trying to focus more on fitting the theme instead of having a perfect song. I also made the sound effects, implemented the audio and made audio sliders in the menu. I had to manage the amount of time spent on this project, due to it being one of the four projects I made around this time, thus not being able to give it my 100 percent.",
                     "image": "./images/Gravity_Xscape.PNG",
                     "tags": [
+                        {
+                            "title":"Game Development",
+                            "color":"green"
+                        },
                         {
                             "title": "Unity",
                             "color": "yellow"
@@ -82,10 +100,14 @@
                     ]
                 },
                 {
-                    "title": "Visual Novel MQP",
-                    "description": "A current work-in-progress Visual Novel created for my capstone project. My responsibilities consist of writing, coding, game design, music composition, and audio engineering.",
+                    "title": "Another Try - Major Qualifying Project",
+                    "description": "Another Try is the visual novel for my Major Qualifying Project, or MQP. I am the lead game and sound designer, and writer. I worked with two other artists, who worked on the art of my game.",
                     "image": "./images/NEH1.png",
                     "tags": [
+                        {
+                            "title":"Game Development",
+                            "color":"green"
+                        },
                         {
                             "title": "Ren'Py",
                             "color": "yellow"
@@ -101,11 +123,122 @@
                         {
                             "title": "Design Work",
                             "color": "teal"
+                        },
+                        {
+                            "title": "Writing Work",
+                            "color": "teal"
+                        },
+                        {
+                            "title": "Programming Work",
+                            "color": "teal"
                         }
                     ],
                     "links": [
                         {
                             "title": "Under Construction!"
+                        }
+                    ]
+                },
+                {
+                    "title": "Sparrow - Vertical Slice",
+                    "description": "For this course, I excitedly created a vertical slice for a pet project of mine. Everything in the environment was made by me, other than the sea of water. I mostly focused on programming and 3D modeling, only spending a few hours on the song in the background. Every 3D model in the game, including the parts of the plane are modular, allowing for ease of creation.",
+                    "image": "./images/8.PNG",
+                    "tags": [
+                        {
+                            "title":"Game Development",
+                            "color":"green"
+                        },
+                        {
+                            "title": "Unity",
+                            "color": "yellow"
+                        },
+                        {
+                            "title": "School Project",
+                            "color": "red"
+                        },
+                        {
+                            "title": "Audio Work",
+                            "color": "teal"
+                        },
+                        {
+                            "title": "Design Work",
+                            "color": "teal"
+                        },
+                        {
+                            "title": "Programming Work",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Download Link",
+                            "link": "https://drive.google.com/file/d/1cHFzcQ2JJJOolJTMlbcwkV1w5ngBfGl-/view?usp=sharing"
+                        }
+                    ]
+                },
+                {
+                    "title": "Oral History of Video Games",
+                    "description": "During my junior year, I gladly worked on an Oral History project involving the industry veteran, Mike Breault. My partner and I had a wonderful online interview with him and after that interview, edited the full video into bite-sized pieces for easier consumption.",
+                    "image": "./images/siglogo.PNG",
+                    "tags": [
+                        {
+                            "title":"Non-Game Development",
+                            "color":"green"
+                        },
+                        {
+                            "title": "Premiere",
+                            "color": "yellow"
+                        },
+                        {
+                            "title": "School Project",
+                            "color": "red"
+                        },
+                        {
+                            "title": "Audio Work",
+                            "color": "teal"
+                        },
+                        {
+                            "title": "Video Editing Work",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Oral History Website",
+                            "link": "http://alpheus.wpi.edu/imgd/oral-history/interviews/mbreault.html"
+                        }
+                    ]
+                },
+                {
+                    "title": "Youtube Channel",
+                    "description": "On my Youtube Channel, there are videos that I've made both for classes and for personal projects. This channel will grdaually be updated with more videos as time goes on.",
+                    "image": "./images/youtubelogo.jpg",
+                    "tags": [
+                        {
+                            "title":"Non-Game Development",
+                            "color":"green"
+                        },
+                        {
+                            "title": "Premiere",
+                            "color": "yellow"
+                        },
+                        {
+                            "title": "School Project",
+                            "color": "red"
+                        },
+                        {
+                            "title": "Audio Work",
+                            "color": "teal"
+                        },
+                        {
+                            "title": "Video Editing Work",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Youtube Link",
+                            "link": "https://www.youtube.com/channel/UC76Hu6cNo1vU7CnPg6hqqpA"
                         }
                     ]
                 }
