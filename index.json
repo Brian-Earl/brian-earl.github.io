@@ -42,6 +42,151 @@
             ],
             "cards": [
                 {
+                    "title": "Flashguard",
+                    "description": "A Project created over the course of 72 hours for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video the user navigates to, scanning the video's content for sections that may cause seizures for people with epilepsy. If such sections are detected, the video will immediately pause or be prevented from playing at all, displaying a pop-up warning of the potential hazards.",
+                    "image": "./images/Flashguard.png",
+                    "tags": [
+                        {
+                            "title": "Python",
+                            "color": "green"
+                        },
+                        {
+                            "title": "Hackathon",
+                            "color": "red"
+                        },
+                        {
+                            "title": "Web Development",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Source Code",
+                            "link": "https://github.com/brycecorbitt/FlashGuard"
+                        }
+                    ]
+                },
+                {
+                    "title": "WebGL Demos",
+                    "description": "Collection of project written in JavaScript using WebGL. <br><br> The first demo contains a spinning mobile with each shape and layer rotating and spinning independently from one another. A spotlight shine on the mobile that the user can freely control the size of. Additionally, the user can toggle between multiple different lighting methods for the mobile. <br><br> The second demo features the same mobile as the first demo. However, in this demo, the model spins inside of a textured room which the mobile can shine shadows onto. Additionally, the user can also enable reflection and refraction effects for the model.",
+                    "image": "./images/WebGl.PNG",
+                    "tags": [
+                        {
+                            "title": "JavaScript",
+                            "color": "green"
+                        },
+                        {
+                            "title": "WebGL",
+                            "color": "green"
+                        },
+                        {
+                            "title": "Web Development",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Demo 1",
+                            "link": "./projects/WebGL - Spotlight/Spotlight.html"
+                        },
+                        {
+                            "title": "Demo 2",
+                            "link": "./projects/WebGL - Textures/Textures.html"
+                        }
+                    ]
+                },
+                                {
+                    "title": "Beckenham Place Park (III)",
+                    "description": "As part of a study aboard program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. Originally we were to research and observe how people used and perceived the park. However, due to travel restrictions we were force to change our plans. Instead, we created tools that could then be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline, used to perform visual observations throughout the park. The information gathered would then synced to a spread sheet once internet connection was has been establish. The information was then fed through macros we created to analyze and create statistics useful for the Lewisham Council.",
+                    "image": "./images/IQP.png",
+                    "tags": [
+                        {
+                            "title": "Javascript",
+                            "color": "green"
+                        },
+                        {
+                            "title": "OpenStreetMap",
+                            "color": "green"
+                        },
+                        {
+                            "title": "Google Sheets",
+                            "color": "green"
+                        },
+                        {
+                            "title": "Excel",
+                            "color": "green"
+                        },
+                        {
+                            "title": "Web Development",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Project Page",
+                            "link": "https://wp.wpi.edu/london/projects/2020-projects-spring/lewisham/"
+                        }
+                    ]
+                },
+                {
+                    "title": "World Happiness Report",
+                    "description": "As part of a class project, a group of students and I were tasked with visualizing a data set of our choice. We chose to visual a the 'World Happiness Report', a data set that breaks down and ranks the happiness of different countries based upon multiple different factors. Alongside creating the visualization, we also created a process book, a document in which we breakdown our thoughts and analysis of the data and document our design process.",
+                    "image": "./images/World_Happiness.PNG",
+                    "tags": [
+                        {
+                            "title": "Javascript",
+                            "color": "green"
+                        },
+                        {
+                            "title": "D3",
+                            "color": "green"
+                        },
+                        {
+                            "title": "Web Development",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Visualization",
+                            "link": "https://bearl.dev/final/"
+                        },
+                        {
+                            "title": "Process Book",
+                            "link": "https://bearl.dev/final/etc/Process_Book.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Dragonfly Game Engine",
+                    "description": "A reconstruction of the Dragonfly Game Engine developed in C++ using the SFML library. The engine was developed over the course of several weeks as a class project. <br><br> As a final test, I, alongside a partner, created a game within said engine, title Ireiterum",
+                    "image": "https://dragonfly.wpi.edu/dragonfly.gif",
+                    "tags": [
+                        {
+                            "title": "C++",
+                            "color": "green"
+                        },
+                        {
+                            "title": "SFML",
+                            "color": "green"
+                        },
+                        {
+                            "title": "Game Development",
+                            "color": "teal"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "title": "Github",
+                            "link": "https://github.com/Brian-Earl/Ireiterum"
+                        },
+                        {
+                            "title": "Game Trailer",
+                            "link": "https://youtu.be/uXhijyxAQlI"
+                        }
+                    ]
+                },
+                               {
                     "title": "Custom NPC System Demonstration",
                     "description": "To assist in the development of a game created for a class project, I created a system that streamlined the creation of NPCs to populate the game world. Through the use of a spreadsheet, managed within Google Sheets, the artists and writers were able to write dialogue and script character interactions from within a web browser. As part of the class, I gave a presentation that ran through the workflow of creating an NPC and how the system significantly streamlined the game creation process.",
                     "image": "./images/NPC_System.jpeg",
@@ -104,89 +249,6 @@
                     ]
                 },
                 {
-                    "title": "Flashguard",
-                    "description": "A Project created over the course of 72 hours for the HACKWPI 2019 hackathon. <br><br> Launching an instance of Chrome, the program monitors any YouTube video the user navigates to, scanning the video's content for sections that may cause seizures for people with epilepsy. If such sections are detected, the video will immediately pause or be prevented from playing at all, displaying a pop-up warning of the potential hazards.",
-                    "image": "https://camo.githubusercontent.com/d85d79d3cfc85055d69ac3bfa81fd64dc6a90aa94453b6179230931c36a63c39/68747470733a2f2f692e696d6775722e636f6d2f394872526d6a472e706e67",
-                    "tags": [
-                        {
-                            "title": "Python",
-                            "color": "green"
-                        },
-                        {
-                            "title": "Hackathon",
-                            "color": "red"
-                        },
-                        {
-                            "title": "Web Development",
-                            "color": "teal"
-                        }
-                    ],
-                    "links": [
-                        {
-                            "title": "Source Code",
-                            "link": "https://github.com/brycecorbitt/FlashGuard"
-                        }
-                    ]
-                },
-                {
-                    "title": "WebGL Demos",
-                    "description": "Collection of project written in JavaScript using WebGL. <br><br> The first demo contains a spinning mobile with each shape and layer rotating and spinning independently from one another. A spotlight shine on the mobile that the user can freely control the size of. Additionally, the user can toggle between multiple different lighting methods for the mobile. <br><br> The second demo features the same mobile as the first demo. However, in this demo, the model spins inside of a textured room which the mobile can shine shadows onto. Additionally, the user can also enable reflection and refraction effects for the model.",
-                    "image": "./images/WebGl.PNG",
-                    "tags": [
-                        {
-                            "title": "JavaScript",
-                            "color": "green"
-                        },
-                        {
-                            "title": "WebGL",
-                            "color": "green"
-                        },
-                        {
-                            "title": "Web Development",
-                            "color": "teal"
-                        }
-                    ],
-                    "links": [
-                        {
-                            "title": "Demo 1",
-                            "link": "./projects/WebGL - Spotlight/Spotlight.html"
-                        },
-                        {
-                            "title": "Demo 2",
-                            "link": "./projects/WebGL - Textures/Textures.html"
-                        }
-                    ]
-                },
-                {
-                    "title": "Dragonfly Game Engine",
-                    "description": "A reconstruction of the Dragonfly Game Engine developed in C++ using the SFML library. The engine was developed over the course of several weeks as a class project. <br><br> As a final test, I, alongside a partner, created a game within said engine, title Ireiterum",
-                    "image": "https://dragonfly.wpi.edu/dragonfly.gif",
-                    "tags": [
-                        {
-                            "title": "C++",
-                            "color": "green"
-                        },
-                        {
-                            "title": "SFML",
-                            "color": "green"
-                        },
-                        {
-                            "title": "Game Development",
-                            "color": "teal"
-                        }
-                    ],
-                    "links": [
-                        {
-                            "title": "Github",
-                            "link": "https://github.com/Brian-Earl/Ireiterum"
-                        },
-                        {
-                            "title": "Game Trailer",
-                            "link": "https://youtu.be/uXhijyxAQlI"
-                        }
-                    ]
-                },
-                {
                     "title": "Rogue-Snake",
                     "description": "Rogue Snake is a game made with the Unity game engine that builds off of the classic game of Snake. Before play begins, the player is able to customize the parameters of the the play field. Upon start, the user is placed into a procedurally generated map whose size and rules match the user's input. This project was created over the span of a week as a class project and as a part of PROCJAM, a yearly game jam celebrating procedural generation in entertainment.",
                     "image": "./images/Rogue_Snake.PNG",
@@ -216,68 +278,6 @@
                         {
                             "title": "Download",
                             "link": "https://kreiselman.itch.io/rogue-snake"
-                        }
-                    ]
-                },
-                {
-                    "title": "Beckenham Place Park (III)",
-                    "description": "As part of a study aboard program, a group of students and I were tasked with assisting the Beckenham Place Park in the London Borough of Lewisham. Originally we were to research and observe how people used and perceived the park. However, due to travel restrictions we were force to change our plans. Instead, we created tools that could then be used by future teams to accomplish our original objectives. <br><br> The tools we created consists of a web tool that would function offline, used to perform visual observations throughout the park. The information gathered would then synced to a spread sheet once internet connection was has been establish. The information was then fed through macros we created to analyze and create statistics useful for the Lewisham Council.",
-                    "image": "./images/IQP.png",
-                    "tags": [
-                        {
-                            "title": "Javascript",
-                            "color": "green"
-                        },
-                        {
-                            "title": "OpenStreetMap",
-                            "color": "green"
-                        },
-                        {
-                            "title": "Google Sheets",
-                            "color": "green"
-                        },
-                        {
-                            "title": "Excel",
-                            "color": "green"
-                        },
-                        {
-                            "title": "Web Development",
-                            "color": "teal"
-                        }
-                    ],
-                    "links": [
-                        {
-                            "title": "Project Page",
-                            "link": "https://wp.wpi.edu/london/projects/2020-projects-spring/lewisham/"
-                        }
-                    ]
-                },
-                {
-                    "title": "World Happiness Report",
-                    "description": "As part of a class project, a group of students and I were tasked with visualizing a data set of our choice. We chose to visual a the 'World Happiness Report', a data set that breaks down and ranks the happiness of different countries based upon multiple different factors. Alongside creating the visualization, we also created a process book, a document in which we breakdown our thoughts and analysis of the data and document our design process.",
-                    "image": "./images/World_Happiness.PNG",
-                    "tags": [
-                        {
-                            "title": "Javascript",
-                            "color": "green"
-                        },
-                        {
-                            "title": "D3",
-                            "color": "green"
-                        },
-                        {
-                            "title": "Web Development",
-                            "color": "teal"
-                        }
-                    ],
-                    "links": [
-                        {
-                            "title": "Visualization",
-                            "link": "https://bearl.dev/final/"
-                        },
-                        {
-                            "title": "Process Book",
-                            "link": "https://bearl.dev/final/etc/Process_Book.pdf"
                         }
                     ]
                 }
